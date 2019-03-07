@@ -1,0 +1,88 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "base"
+
+/* basic classes START */
+
+.red-btn
+    justify-self: start
+    background-color: $red
+    border: none
+    color: #fff
+    text-decoration: none
+    font-size: em(14px)
+    padding: em(12px) em(30px)
+    border-radius: 20em
+    min-width: 140px
+    text-align: center
+    cursor: pointer
+
+/* basic classes END */
+/* header START */    
+    
+.menu-top-line
+    padding: 10px 0
+    background-color: #fff
+    &>div
+        grid-template-columns: 2fr 4fr 3fr 1fr
+        align-items: center
+    &__btn
+        justify-self: end
+
+.main-menu
+    margin: 0
+    padding: 0
+    &__list
+        list-style-type: none
+        display: inline-block
+        margin-right: 75px
+        &:last-child
+            margin-right: 0 
+    &__text
+        font-size: em(18px)
+        font-weight: 900
+        color: $blue
+        text-decoration: none
+
+.search-line
+    border: 1px solid $lBlue
+    padding: 8px 10px
+    border-radius: 10em
+    &__btn
+        background-color: #fff
+        border: none
+        cursor: pointer
+        img 
+            position: relative
+            top: 2px
+    &__input 
+        border: none
+        font-size: em(18px)
+        outline: none
+        color: $blue
+        &::-webkit-input-placeholder
+            color: $blue
+
+.menu-bottom-line
+    background-color: $blue
+    padding: 18px 0
+    &>div 
+        grid-template-columns: 80%
+        justify-content: end
+
+.bottom-menu
+    grid-template-columns: repeat(5, max-content)
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    &__list
+        list-style-type: none
+        display: inline-block
+    &__text
+        color: #fff
+        text-decoration: none
+        font-size: em(14px)
+
+
+@import "media" // Всегда в конце
