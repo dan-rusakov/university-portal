@@ -14,7 +14,6 @@
     font-size: em(14px)
     padding: em(12px) em(30px)
     border-radius: 20em
-    min-width: 140px
     text-align: center
     cursor: pointer
 
@@ -25,12 +24,30 @@
     padding: 10px 0
     background-color: #fff
     &>div
-        grid-template-columns: 2fr 4fr 3fr 1fr
+        grid-template-columns: repeat(10, 1fr)
+        grid-column-gap: 20px
         align-items: center
     &__btn
+        grid-column: span 1
         justify-self: end
+        width: 100%
+
+.logo
+    grid-column: span 2
+    text-decoration: none
+    grid-template-columns: max-content max-content
+    align-items: center
+    &__img 
+        margin-right: 20px
+    &__text
+        font-family: $adys
+        line-height: 1.2
+        max-width: 80px
+        color: $red
+        margin: 0
 
 .main-menu
+    grid-column: span 4
     margin: 0
     padding: 0
     &__list
@@ -46,9 +63,11 @@
         text-decoration: none
 
 .search-line
+    grid-column: span 3
     border: 1px solid $lBlue
     padding: 8px 10px
     border-radius: 10em
+    grid-template-columns: max-content 1fr 
     &__btn
         background-color: #fff
         border: none
@@ -63,17 +82,19 @@
         color: $blue
         &::-webkit-input-placeholder
             color: $blue
+        
 
 .menu-bottom-line
     background-color: $blue
     padding: 18px 0
     &>div 
-        grid-template-columns: 80%
+        grid-template-columns: repeat(10, 1fr)
         justify-content: end
 
 .bottom-menu
-    grid-template-columns: repeat(5, max-content)
+    grid-auto-flow: column
     justify-content: space-between
+    grid-column: 3 / span 8
     margin: 0
     padding: 0
     &__list
@@ -83,6 +104,109 @@
         color: #fff
         text-decoration: none
         font-size: em(14px)
+
+.menu-line-mobile
+    background-color: $blue
+    padding: 13px 0
+    display: none
+    &>div
+        grid-template-columns: max-content 1fr max-content max-content
+        align-items: center
+        grid-column-gap: 20px
+
+.hamburger
+    background-color: transparent
+    border: none
+    height: 12px
+    &__inner
+        width: 18px
+        height: 2px
+        background-color: #fff
+        position: relative
+        &::before, &::after
+            content: ''
+            width: 18px
+            height: 2px
+            display: block
+            background-color: #fff
+            position: absolute
+            left: 0
+        &::before
+            top: -5px
+        &::after
+            top: 5px
+
+.menu-box-mobile
+    position: absolute
+    top: 0
+    left: 0
+    min-height: 100vh
+    width: 80%
+    background-color: $lBlue
+    transform: translateX(-100%)
+    transition: 0.25s ease transform
+    &.open-mobile-menu
+        transform: none
+        .menu-box-mobile__close-icon
+            display: block
+    &__close-icon
+        position: absolute
+        right: 0
+        top: 13px
+        transform: translateX(50%)
+        display: none
+    &__logo
+        align-items: center
+        grid-template-columns: max-content 1fr
+        padding: 13px 15px
+    &__logo-img
+        width: 40px
+        margin-right: 10px
+    &__logo-text
+        font-size: em(14px)
+        color: $blue
+        max-width: 100px
+        font-family: $adys
+        line-height: 1.2
+        margin: 0
+    &__enter-line
+        grid-template-columns: max-content 1fr
+        align-items: center
+        text-decoration: none
+        padding: 20px 25px
+        border:
+            top: 1px solid #96D4E9
+            bottom: 1px solid #96D4E9
+    &__enter-line-img
+        margin-right: 20px
+    &__enter-line-text
+        font-size: em(14px)
+        margin: 0
+        color: $blue
+    &__menu-inner
+
+    &__main-menu
+        margin: 0
+        padding: 20px 25px
+        list-style-type: none
+        li 
+            margin-bottom: 20px
+        a 
+            text-decoration: none
+            font-weight: 900
+            color: $blue
+            font-size: em(18px)
+    &__sec-menu
+        margin: 0
+        padding: 20px 25px
+        list-style-type: none
+        li 
+            margin-bottom: 15px
+        a 
+            text-decoration: none
+            font-weight: 900
+            font-size: em(14px)
+            color: $blue
 
 
 @import "media" // Всегда в конце

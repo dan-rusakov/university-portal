@@ -19,7 +19,7 @@ gulp.task('browser-sync', function() {
 		notify: false,
 		open: false,
 		// online: false, // Offline work
-		//tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+		//tunnel: false, tunnel: "smart-coug", // Demonstration page: http://uniportal.localtunnel.me
 	});
 });
 

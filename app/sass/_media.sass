@@ -3,18 +3,63 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)	
+	.main-menu
+		&__list
+			margin-right: 30px
+		&__text
+
+			font-size: em(17px)
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.main-menu
+		&__list
+			margin-right: 15px
+		&__text
+			font-size: em(13px)
+	.logo__img
+		width: 73px
+	.bottom-menu
+		&__text
+			font-size: em(13px)
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.menu-top-line
+		&>div 
+			grid-template-columns: max-content 1fr max-content max-content
+	.search-line
+		justify-self: end
+		&__btn
+			order: 1
+		&__input 
+			display: none
+			&.search-open__input
+            	display: block
+		&.search-open__box
+			grid-column: span 2
+	.logo, .main-menu, .search-line
+    	grid-column: span 1
+	.bottom-menu
+		grid-column: span 10
+	.main-menu.search-open__menu
+		display: none
+	
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.menu-top-line, .menu-bottom-line
+		display: none
+	.logo__text
+		max-width: 100px
+		color: #fff
+		font-size: em(14px)
+	.menu-line-mobile
+		display: block
+	
 
 
 /* Extra Small Devices, Phones */
