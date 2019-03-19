@@ -1,0 +1,70 @@
+@font-face
+    font-family: "Icons"
+    src: url('../fonts/Icons.eot')
+    src: url('../fonts/Icons.eot?#iefix') format('eot'), url('../fonts/Icons.woff') format('woff'), url('../fonts/Icons.ttf') format('truetype'), url('../fonts/Icons.svg#Icons') format('svg')
+
+@mixin icon-styles
+    font-family: "Icons"
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-style: normal
+    font-variant: normal
+    font-weight: normal
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none
+    text-transform: none
+
+
+%icon
+    +icon-styles
+
+@function icon-char($filename)
+    $char: ""
+
+    @if $filename == btn-arrow
+        $char: "\E001"
+    
+    @if $filename == enter
+        $char: "\E002"
+    
+    @if $filename == form-calendar
+        $char: "\E003"
+    
+    @if $filename == form-email
+        $char: "\E004"
+    
+    @if $filename == form-name
+        $char: "\E005"
+    
+    @if $filename == form-phone
+        $char: "\E006"
+    
+    @if $filename == search
+        $char: "\E007"
+    
+    @return $char
+
+
+@mixin icon($filename, $insert: before, $extend: true)
+    &:#{$insert}
+        @if $extend
+            @extend %icon
+        @else
+            +icon-styles
+        
+        content: icon-char($filename)
+
+.icon-btn-arrow
+    +icon(btn-arrow)
+.icon-enter
+    +icon(enter)
+.icon-form-calendar
+    +icon(form-calendar)
+.icon-form-email
+    +icon(form-email)
+.icon-form-name
+    +icon(form-name)
+.icon-form-phone
+    +icon(form-phone)
+.icon-search
+    +icon(search)
