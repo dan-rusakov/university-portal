@@ -10,6 +10,12 @@
 		&__text
 
 			font-size: em(17px)
+	.child-skills
+		&__title
+			font-size: em(42px)
+			margin-bottom: 40px
+		&__inner
+			padding: 90px 40px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -27,6 +33,10 @@
 		padding: 90px 0
 		&__title
 			margin-bottom: em(16px)
+	.child-skills
+		&__title
+			font-size: em(34px)
+			margin-bottom: 40px
 
 
 /* Medium Devices, Desktops */
@@ -56,6 +66,21 @@
 			font-size: em(54px)
 	.main-btn, .sec-btn
 		font-size: em(13px)
+	.note
+		&__title
+			font-size: em(20px)
+			line-height: 1.2
+		&__text
+			font-size: em(16px)
+	.child-skills
+		&__form
+			grid-template-columns: 1fr
+		&__title
+			font-size: em(24px)
+		&__btn
+			font-size: em(18px)
+		&__inner
+			padding: 50px 40px
 	
 
 
@@ -88,6 +113,49 @@
 		width: 100%
 		text-align: center
 		font-size: em(18px)
+	.notes
+		padding: 25px 0 80px
+		&>div
+			grid-template-columns: 1fr
+			padding: 0
+		&__title
+			grid-column: 1/2
+			font-size: em(28px)
+			text-align: left
+			margin-bottom: 5px
+			padding: 0 30px
+		&__btn 
+			grid-column: 1/2
+			margin-top: 20px
+	.more-btn
+		font-size: em(16px)
+		&::before
+			font-size: em(16px)
+	.note
+		padding: 22px 30px
+		border-radius: 0
+		&__header
+			grid-column-gap: 15px
+			margin-bottom: 20px
+		&__img 
+			width: 45px
+		&__name
+			margin-bottom: 0
+		&__title
+			font-size: em(24px)
+		&__text
+			font-size: em(18px)
+	.child-skills
+		&>div
+			grid-template-columns: 1fr
+		&::before
+			display: none
+		&__inner
+			padding: 35px 30px 50px
+		&__input-inner, &__personal-data
+			display: none
+		&__btn
+			font-size: em(24px)
 	
 
 

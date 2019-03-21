@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.min.css?ver=1.0.6">
 
 </head>
 
@@ -33,7 +33,7 @@
 						<li class="main-menu__list"><a class="main-menu__text" href="#">Контакты</a></li>
 					</ul>
 					<form class="search-line grid">
-						<button type="submit" class="search-line__btn"><img src="img/search-icon.svg" alt="лупа"></button>
+						<button type="submit" class="search-line__btn"><i class="icon-search"></i></button>
 						<input type="text" class="search-line__input" placeholder="Поиск">
 					</form>
 					<a href="#" class="red-btn menu-top-line__btn" id="enter-btn">Войти</a>
@@ -58,8 +58,8 @@
 					<a href="/" class="logo grid">
 						<p class="logo__text">Все мы родом из детства</p>
 					</a>
-					<a href="#" class="search-link"><img src="img/search-icon-mobile.svg" alt="поиск"></a>
-					<a href="#" class="enter-link"><img src="img/enter-icon-light.svg" alt="вход"></a>
+					<a href="#" class="search-link"><i class="icon-search"></i></a>
+					<a href="#" class="enter-link"><i class="icon-enter"></i></a>
 				</div>
 			</div>
 			<div class="menu-box-mobile">
@@ -68,7 +68,7 @@
 					<p class="menu-box-mobile__logo-text">Все мы родом из детства</p>
 				</div>
 				<a href="#" class="menu-box-mobile__enter-line grid">
-					<img src="img/enter-icon-dark.svg" alt="вход" class="menu-box-mobile__enter-line-img">
+					<i class="menu-box-mobile__enter-line-img icon-enter"></i>
 					<p class="menu-box-mobile__enter-line-text">Вход / Регистрация</p>
 				</a>
 				<div class="menu-box-mobile__menu-inner">
@@ -84,7 +84,7 @@
 						<li><a href="#">Учебный клуб</a></li>
 					</ul>
 				</div>
-				<a href="#" class="menu-box-mobile__close-icon"><img src="img/arrow-menu-icon.svg" alt="закрыть"></a>
+				<a href="#" class="menu-box-mobile__close-icon"><img src="img/icon-arrow-menu.svg" alt="закрыть"></a>
 			</div>
 	</header>
 	<section class="page-banner" style="background-image: url(img/main-page-banner-img1.jpg);">
@@ -97,6 +97,108 @@
 			</div>
 		</div>
 	</section>
+	<section class="notes">
+		<div class="container grid">
+			<h2 class="section-title notes__title">Заметки и статьи наших специалистов</h2>
+			<div class="note">
+				<div class="note__header grid">
+					<img src="img/__note-img.jpg" alt="" class="note__img img-responsive">
+					<p class="note__name">Анна Иванова</p>
+					<p class="note__published-time">8 минут назад</p>
+				</div>
+				<div class="note__content">
+					<p class="note__title">Игры с малышами в первые месяцы жизни</p>
+					<p class="note__text">Напрасно большинство мамочек думает, что месячному ребёнку нужно только питание и сон...</p>
+				</div>
+			</div>
+			<div class="note">
+				<div class="note__header grid">
+					<img src="img/__note-img.jpg" alt="" class="note__img img-responsive">
+					<p class="note__name">Анна Иванова</p>
+					<p class="note__published-time">8 минут назад</p>
+				</div>
+				<div class="note__content">
+					<p class="note__title">Игры с малышами в первые месяцы жизни</p>
+					<p class="note__text">Напрасно большинство мамочек думает, что месячному ребёнку нужно только питание и сон...</p>
+				</div>
+			</div>
+			<div class="note">
+				<div class="note__header grid">
+					<img src="img/__note-img.jpg" alt="" class="note__img img-responsive">
+					<p class="note__name">Анна Иванова</p>
+					<p class="note__published-time">8 минут назад</p>
+				</div>
+				<div class="note__content">
+					<p class="note__title">Игры с малышами в первые месяцы жизни</p>
+					<p class="note__text">Напрасно большинство мамочек думает, что месячному ребёнку нужно только питание и сон...</p>
+				</div>
+			</div>
+			<div class="note">
+				<div class="note__header grid">
+					<img src="img/__note-img.jpg" alt="" class="note__img img-responsive">
+					<p class="note__name">Анна Иванова</p>
+					<p class="note__published-time">8 минут назад</p>
+				</div>
+				<div class="note__content">
+					<p class="note__title">Игры с малышами в первые месяцы жизни</p>
+					<p class="note__text">Напрасно большинство мамочек думает, что месячному ребёнку нужно только питание и сон...</p>
+				</div>
+			</div>
+			<a href="#" class="more-btn notes__btn">Показать больше статей</a>
+		</div>
+	</section>
+	<section class="child-skills">
+		<div class="grid">
+			<img src="img/child-skills-mobile-img.jpg" alt="" class="child-skills__mobile-img">
+			<div class="child-skills__inner grid">
+				<p class="child-skills__title">Определим предрасположенность вашего ребёнка</p>
+				<form class="main-form child-skills__form grid">
+					<label for="" class="main-form__input-inner child-skills__input-inner">
+						<i class="icon-form-name"></i>
+						<input type="text" class="main-form__input child-skills__input" placeholder="Имя">
+					</label>
+					<label for="" class="main-form__input-inner child-skills__input-inner">
+						<i class="icon-form-calendar"></i>
+						<input type="text" class="main-form__input child-skills__input" placeholder="Дата рождения ребенка">
+					</label>
+					<label for="" class="main-form__input-inner child-skills__input-inner">
+						<i class="icon-form-email"></i>
+						<input type="text" class="main-form__input child-skills__input" placeholder="Email">
+					</label>
+					<label for="" class="main-form__input-inner child-skills__input-inner">
+						<i class="icon-form-phone"></i>
+						<input type="text" class="main-form__input child-skills__input" placeholder="Телефон">
+					</label>
+					<p class="child-skills__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="child-skills__personal-data-link">персональных данных</a></p>
+					<input type="submit" value="Узнать" class="main-btn child-skills__btn">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<div class="child-ckills-popup">
+		<h1>Child skills</h1>
+		<form class="main-form grid">
+			<label for="" class="main-form__input-inner">
+				<i class="icon-form-name"></i>
+				<input type="text" class="main-form__input" placeholder="Имя">
+			</label>
+			<label for="" class="main-form__input-inner">
+				<i class="icon-form-calendar"></i>
+				<input type="text" class="main-form__input" placeholder="Дата рождения ребенка">
+			</label>
+			<label for="" class="main-form__input-inner">
+				<i class="icon-form-email"></i>
+				<input type="text" class="main-form__input" placeholder="Email">
+			</label>
+			<label for="" class="main-form__input-inner">
+				<i class="icon-form-phone"></i>
+				<input type="text" class="main-form__input" placeholder="Телефон">
+			</label>
+			<p class="child-skills__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="child-skills__personal-data-link">персональных данных</a></p>
+			<input type="submit" value="Узнать" class="main-btn child-skills__btn2">
+		</form>
+	</div>
 	
 	
 	<script src="js/scripts.min.js"></script>
