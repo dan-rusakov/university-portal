@@ -69,6 +69,27 @@
         font-size: em(18px)
         color: $red
 
+.more-btn-red
+    background-color: $red
+    border: 1px solid $red
+    border-radius: 30em
+    font-size: em(18px)
+    color: #fff
+    padding: em(16px) em(65px) em(16px) em(35px)
+    text-decoration: none
+    display: inline-block
+    position: relative
+    &::before
+        content: '\E001'
+        font-family: Icons
+        position: absolute
+        display: inline
+        right: em(30px)
+        top: 50%
+        transform: translateY(-50%)
+        font-size: em(18px)
+        color: #fff
+
 .main-form
     &__input
         border: none
@@ -90,6 +111,22 @@
             z-index: 1
             top: 50%
             transform: translateY(-50%)
+
+.owl-dots 
+    text-align: center
+    padding: 15px 0 0            
+.owl-dot
+    display: inline-block
+    span 
+        width: 20px
+        height: 20px
+        margin: 7px 10px
+        background: $lBlue
+        display: block
+        transition: opacity .2s ease
+        border-radius: 40px
+    &.active span, &:hover span
+        background: $blue
 
 /* basic classes END */
 /* header START */    
@@ -421,8 +458,71 @@
         color: #fff
     &__mobile-img
         display: none 
+
+.child-skills-popup
+    padding: 15px
+    &__title
+        font-size: em(26px)
+        color: $blue
+        font-weight: 900
+        line-height: 1.1 
+        margin: 0 0 em(30px)
+    &__input 
+        width: 100%
+        margin-bottom: 10px
+    &__personal-data
+        font-size: em(14px)
+        color: $blue
+        
+.fsp-close
+    color: $blue
+    text-decoration: none 
     
 /* child skills section END */
+/* timetable section START */
+
+.timetable
+    padding: 70px 0 100px
+    background-image: url(../img/symphony-pattern.png)
+    background-size: 198px 198px
+    background-repeat: repeat
+    background-position: 0 0
+    &>div 
+        justify-content: center
+    &__title
+        margin-bottom: 50px
+    &__btn
+        margin-top: 50px
+        
+.timetable-box
+    background-color: #fff
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+    margin-bottom: 15px
+    border-radius: 0 0 3px 3px
+    &__img
+        height: 380px
+        border-radius: 3px 3px 0 0
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+    &__content
+        padding: 45px 90px 70px
+    &__date
+        font-size: em(18px)
+        color: $blue
+        margin: 0 0 em(10px)
+    &__title
+        font-size: em(30px)
+        font-weight: 900
+        color: $dark
+        line-height: 1.1
+        margin: 0 0 em(8px)
+    &__author
+        font-size: em(18px)
+        margin: 0 0 em(45px)
+    
+
+/* timetable section END */
 
 
 @import "media" // Всегда в конце

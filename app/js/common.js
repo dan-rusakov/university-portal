@@ -40,16 +40,6 @@ $(function() {
 
 	// open/close mobile-menu-box
 
-	/*$("body").click(function(e) {
-		if($(e.target).closest(".menu-box-mobile").length==0 && $('.menu-box-mobile').hasClass('open-mobile-menu')){
-			$(".menu-box-mobile").removeClass('open-mobile-menu');
-		}
-	});*/
-
-	$("body").click(function() {
-		
-	});
-
 	$('.hamburger').on('click', function(){
 		$('.menu-box-mobile').addClass('open-mobile-menu');
 	});
@@ -57,5 +47,33 @@ $(function() {
 	$('.menu-box-mobile__close-icon').on('click', function(){
 		$(".menu-box-mobile").removeClass('open-mobile-menu');
 	});
+
+	// create child skills popup
+
+	$(".child-skills__btn").fullScreenPopup({
+		bgColor: "#A6DCEE"
+	});
+
+	// create datetable carousel
+
+	$('.timetable-carousel').owlCarousel({
+		loop:false,
+		nav: false,
+		dots: true,
+		margin:20,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1200:{
+				items:3
+			}
+		}
+	})
+		
 
 });

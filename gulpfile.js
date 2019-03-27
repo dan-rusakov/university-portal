@@ -30,6 +30,8 @@ gulp.task('browser-sync', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/fullscreen popup/jquery.fullscreen-popup.min.js',
+		'app/libs/OwlCarousel2/owl.carousel.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

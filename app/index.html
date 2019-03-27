@@ -170,11 +170,81 @@
 						<input type="text" class="main-form__input child-skills__input" placeholder="Телефон">
 					</label>
 					<p class="child-skills__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="child-skills__personal-data-link">персональных данных</a></p>
-					<input type="submit" value="Узнать" class="main-btn child-skills__btn">
+					<input type="submit" value="Узнать" data-popup="#child-skills-popup" class="main-btn child-skills__btn">
 				</form>
 			</div>
 		</div>
-	</section>	
+	</section>
+	<section class="timetable">
+		<div class="container">
+			<h2 class="section-title timetable__title">Свежее раписание</h2>
+		</div>
+		<div class="owl-carousel timetable-carousel">
+			<div class="timetable-box">
+				<div class="timetable-box__img" style="background-image: url(img/__datetable-img1.jpg)"></div>
+				<div class="timetable-box__content">
+					<p class="timetable-box__date">21 февраля в 12:00 по Москвве</p>
+					<p class="timetable-box__title">Курс «Развитие ребёнка от 1 года до 3 лет»</p>
+					<p class="timetable-box__author">Автор - Юлия Кузьмина</p>
+					<a href="#" class="timetable-box__btn more-btn-red">Подробнее</a>
+				</div>
+			</div>
+			<div class="timetable-box">
+				<div class="timetable-box__img" style="background-image: url(img/__datetable-img2.jpg)"></div>
+				<div class="timetable-box__content">
+					<p class="timetable-box__date">21 февраля в 12:00 по Москвве</p>
+					<p class="timetable-box__title">Курс «Развитие ребёнка от 1 года до 3 лет»</p>
+					<p class="timetable-box__author">Автор - Юлия Кузьмина</p>
+					<a href="#" class="timetable-box__btn more-btn-red">Подробнее</a>
+				</div>
+			</div>
+			<div class="timetable-box">
+				<div class="timetable-box__img" style="background-image: url(img/__datetable-img3.jpg)"></div>
+				<div class="timetable-box__content">
+					<p class="timetable-box__date">21 февраля в 12:00 по Москвве</p>
+					<p class="timetable-box__title">Курс «Развитие ребёнка от 1 года до 3 лет»</p>
+					<p class="timetable-box__author">Автор - Юлия Кузьмина</p>
+					<a href="#" class="timetable-box__btn more-btn-red">Подробнее</a>
+				</div>
+			</div>
+			<div class="timetable-box">
+				<div class="timetable-box__img" style="background-image: url(img/__datetable-img1.jpg)"></div>
+				<div class="timetable-box__content">
+					<p class="timetable-box__date">21 февраля в 12:00 по Москвве</p>
+					<p class="timetable-box__title">Курс «Развитие ребёнка от 1 года до 3 лет»</p>
+					<p class="timetable-box__author">Автор - Юлия Кузьмина</p>
+					<a href="#" class="timetable-box__btn more-btn-red">Подробнее</a>
+				</div>
+			</div>
+		</div>
+		<div class="container grid">
+			<a href="#" class="timetable__btn more-btn">Показать все события</a>
+		</div>
+	</section>
+
+	<div class="child-skills-popup" id="child-skills-popup" style="display: none; width: 100%">
+		<p class="child-skills-popup__title">Определим предрасположенность вашего ребёнка</p>
+		<form class="main-form child-skills-popup__form grid">
+			<label for="" class="main-form__input-inner child-skills-popup__input-inner">
+				<i class="icon-form-name"></i>
+				<input type="text" class="main-form__input child-skills-popup__input" placeholder="Имя">
+			</label>
+			<label for="" class="main-form__input-inner child-skills-popup__input-inner">
+				<i class="icon-form-calendar"></i>
+				<input type="text" class="main-form__input child-skills-popup__input" placeholder="Дата рождения ребенка">
+			</label>
+			<label for="" class="main-form__input-inner child-skills-popup__input-inner">
+				<i class="icon-form-email"></i>
+				<input type="text" class="main-form__input child-skills-popup__input" placeholder="Email">
+			</label>
+			<label for="" class="main-form__input-inner child-skills-popup__input-inner">
+				<i class="icon-form-phone"></i>
+				<input type="text" class="main-form__input child-skills-popup__input" placeholder="Телефон">
+			</label>
+			<input type="submit" value="Узнать" data-popup="#child-skills-popup" class="main-btn child-skills-popup__btn">
+			<p class="child-skills-popup__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="child-skills__personal-data-link">персональных данных</a></p>
+		</form>
+	</div>
 	
 	<script src="js/scripts.min.js"></script>
 
