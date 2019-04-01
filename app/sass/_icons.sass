@@ -24,26 +24,32 @@
     @if $filename == btn-arrow
         $char: "\E001"
     
-    @if $filename == close
+    @if $filename == carousel-arrow-left
         $char: "\E002"
     
-    @if $filename == enter
+    @if $filename == carousel-arrow-right
         $char: "\E003"
     
-    @if $filename == form-calendar
+    @if $filename == close
         $char: "\E004"
     
-    @if $filename == form-email
+    @if $filename == enter
         $char: "\E005"
     
-    @if $filename == form-name
+    @if $filename == form-calendar
         $char: "\E006"
     
-    @if $filename == form-phone
+    @if $filename == form-email
         $char: "\E007"
     
-    @if $filename == search
+    @if $filename == form-name
         $char: "\E008"
+    
+    @if $filename == form-phone
+        $char: "\E009"
+    
+    @if $filename == search
+        $char: "\E00A"
     
     @return $char
 
@@ -59,6 +65,10 @@
 
 .icon-btn-arrow
     +icon(btn-arrow)
+.icon-carousel-arrow-left
+    +icon(carousel-arrow-left)
+.icon-carousel-arrow-right
+    +icon(carousel-arrow-right)
 .icon-close
     +icon(close)
 .icon-enter

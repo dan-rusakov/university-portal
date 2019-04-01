@@ -16,6 +16,8 @@
 			margin-bottom: 40px
 		&__inner
 			padding: 90px 40px
+	.timetable-box__content
+		padding: 45px 50px 70px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -37,6 +39,8 @@
 		&__title
 			font-size: em(34px)
 			margin-bottom: 40px
+	.timetable-box__content
+		padding: 45px 70px 70px
 
 
 /* Medium Devices, Desktops */
@@ -81,6 +85,8 @@
 			font-size: em(18px)
 		&__inner
 			padding: 50px 40px
+	.timetable-box__content
+		padding: 45px 50px 70px
 	
 
 
@@ -154,14 +160,50 @@
 			padding: 35px 30px 50px
 		&__input-inner, &__personal-data
 			display: none
-		&__btn
-			font-size: em(24px)
-	
-
+		&__mobile-img
+			display: block
+	.partners-carousel
+		padding: 0 100px
+		display: grid 
+		grid-template-columns: 1fr 1fr
+		grid-gap: 10px
+	.partners-box
+		height: 160px
+		border: 5px solid $blue
+	.email-delivery
+		&__title
+			font-size: em(32px)
+		&__subtitle
+			margin-bottom: 40px
+		&__form 
+			grid-template-columns: 1fr
+		&__personal-data
+			grid-column: 1/2
+		&__input-inner
+			margin-bottom: 20px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.timetable-box__content
+		padding: 30px
+	.timetable
+		padding: 40px 0 80px
+		&__title
+			font-size: em(30px)
+			margin-bottom: em(15px)
+		&__btn
+			margin-top: 30px
+	.partners-carousel
+		padding: 0 30px
+	.partners
+		padding: 40px 0 60px
+		&__title
+			font-size: em(26px)
+			margin-bottom: em(25px)
+	.email-delivery
+		padding: 40px 0 60px
+		&__title
+			font-size: em(26px)
 
 
 /* Custom, iPhone Retina */

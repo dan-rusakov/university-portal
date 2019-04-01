@@ -169,7 +169,7 @@
 						<i class="icon-form-phone"></i>
 						<input type="text" class="main-form__input child-skills__input" placeholder="Телефон">
 					</label>
-					<p class="child-skills__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="child-skills__personal-data-link">персональных данных</a></p>
+					<p class="main-form__personal-data child-skills__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="main-form__personal-data-link child-skills__personal-data-link">персональных данных</a></p>
 					<input type="submit" value="Узнать" data-popup="#child-skills-popup" class="main-btn child-skills__btn">
 				</form>
 			</div>
@@ -221,6 +221,33 @@
 			<a href="#" class="timetable__btn more-btn">Показать все события</a>
 		</div>
 	</section>
+	<section class="partners">
+		<div class="container">
+			<h2 class="section-title partners__title">Наши партнёры</h2>
+		</div>
+		<div class="owl-carousel partners-carousel">
+			<div class="partners-box grid"><img src="img/__partners-img1.jpg" alt="" class="partners-box__img"></div>
+			<div class="partners-box grid"><img src="img/__partners-img2.jpg" alt="" class="partners-box__img"></div>
+			<div class="partners-box grid"><img src="img/__partners-img3.jpg" alt="" class="partners-box__img"></div>
+			<div class="partners-box grid"><img src="img/__partners-img1.jpg" alt="" class="partners-box__img"></div>
+			<div class="partners-box grid"><img src="img/__partners-img2.jpg" alt="" class="partners-box__img"></div>
+			<div class="partners-box grid"><img src="img/__partners-img3.jpg" alt="" class="partners-box__img"></div>
+		</div>
+	</section>
+	<section class="email-delivery">
+		<div class="container grid">
+			<h2 class="email-delivery__title section-title">Подпишитесь на нашу рассылку интересных событий:</h2>
+			<p class="email-delivery__subtitle">В ней анонсы курсов, расписание вебинаров, новости о распродажах и акциях. Присоединяйтесь!</p>
+			<form class="main-form email-delivery__form grid">
+				<label for="" class="main-form__input-inner email-delivery__input-inner">
+					<i class="icon-form-email"></i>
+					<input type="text" class="main-form__input email-delivery__input" placeholder="Email">
+				</label>
+				<input type="submit" value="Подписаться" class="main-btn email-delivery__btn">
+				<p class="main-form__personal-data email-delivery__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="main-form__personal-data-link email-delivery__personal-data-link">персональных данных</a></p>
+			</form>
+		</div>
+	</section>
 
 	<div class="child-skills-popup" id="child-skills-popup" style="display: none; width: 100%">
 		<p class="child-skills-popup__title">Определим предрасположенность вашего ребёнка</p>
@@ -242,7 +269,7 @@
 				<input type="text" class="main-form__input child-skills-popup__input" placeholder="Телефон">
 			</label>
 			<input type="submit" value="Узнать" data-popup="#child-skills-popup" class="main-btn child-skills-popup__btn">
-			<p class="child-skills-popup__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="child-skills__personal-data-link">персональных данных</a></p>
+			<p class="main-form__personal-data child-skills-popup__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="main-form__personal-data-link">персональных данных</a></p>
 		</form>
 	</div>
 	

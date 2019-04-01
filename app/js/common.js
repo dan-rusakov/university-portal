@@ -66,14 +66,91 @@ $(function() {
 			0:{
 				items:1
 			},
-			600:{
-				items:3
+			768:{
+				items:2
 			},
 			1200:{
 				items:3
 			}
 		}
-	})
-		
+	});
 
+	// create partners carousel
+
+	var owlPartners = $('.partners-carousel'),
+	owlOptions = {
+		loop:false,
+		nav: true,
+		dots: false,
+		margin:20,
+		navText: ['<i class="icon-carousel-arrow-left"></i>','<i class="icon-carousel-arrow-right"></i>'],
+		responsiveClass:true,
+		responsive:{
+			768:{
+				items:2
+			},
+			992:{
+				items:3
+			},
+			1200:{
+				items:4
+			},
+			1600:{
+				items:5
+			}
+		}
+	};
+
+	if ( $(window).width() > 768 ) {
+		var owlActive = owlPartners.owlCarousel(owlOptions);
+		owlPartners.addClass('owl-carousel');
+	  } else {
+		owlPartners.addClass('off');
+		owlPartners.removeClass('owl-carousel');
+	  }
+	
+	  $(window).resize(function() {
+		if ( $(window).width() > 768 ) {
+		  if ( $('.partners-carousel').hasClass('off') ) {
+			var owlActive = owlPartners.owlCarousel(owlOptions);
+			owlPartners.removeClass('off');
+			owlPartners.addClass('owl-carousel');
+		  }
+		} else {
+		  if ( !$('.partners-carousel').hasClass('off') ) {
+			owlPartners.addClass('off').trigger('destroy.owl.carousel');
+			owlPartners.find('.owl-stage-outer').children(':eq(0)').unwrap();
+			owlPartners.removeClass('owl-carousel');
+		  }
+		}
+	  });
+
+	/*$('.partners-carousel').owlCarousel({
+		loop:false,
+		nav: true,
+		dots: false,
+		margin:20,
+		navText: ['<i class="icon-carousel-arrow-left"></i>','<i class="icon-carousel-arrow-right"></i>'],
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav:false
+			},
+			768:{
+				items:2
+			},
+			992:{
+				items:3
+			},
+			1200:{
+				items:4
+			},
+			1600:{
+				items:5
+			}
+		}
+	});*/
+		
+	
 });
