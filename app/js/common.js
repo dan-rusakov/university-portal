@@ -125,17 +125,43 @@ $(function() {
 		}
 	  });
 
-	/*$('.partners-carousel').owlCarousel({
+	// create popup gallery for tabs
+
+	$('.stores-location-tab-carousel').fancybox({
+		selector : '.owl-item:not(.cloned) a',
+		backFocus : false,
+		hash   : false,
+		thumbs : {
+			autoStart : true
+		},
+		transitionEffect: false,
+		animationEffect: false,
+		thumbs: false,
+		buttons: [
+			"close"
+		],
+	});
+
+	// create stores location in tabs carousel 
+
+	$('.stores-location-tab-carousel').owlCarousel({
 		loop:false,
 		nav: true,
 		dots: false,
 		margin:20,
-		navText: ['<i class="icon-carousel-arrow-left"></i>','<i class="icon-carousel-arrow-right"></i>'],
+		navText: ['<i class="icon-bold-arrow-left"></i>','<i class="icon-bold-arrow-right"></i>'],
 		responsiveClass:true,
 		responsive:{
 			0:{
-				items:1,
-				nav:false
+				items:3,
+				nav:false,
+				dots:true
+			},
+			480:{
+				items:2
+			},
+			600:{
+				items:3
 			},
 			768:{
 				items:2
@@ -147,10 +173,25 @@ $(function() {
 				items:4
 			},
 			1600:{
-				items:5
+				items:4
 			}
 		}
-	});*/
+	});
+
+	// create slide of tabs 
+
+	$('.stores-location-tab__header').on('click', function(){
+		$(this).toggleClass('active');
+	});
+
+	// create switch of tabs
+
+	$('.stores-location-header__listText').on('click', function(){
+		var listTextIndex = $(this).index();
+		$('.stores-location-tab-category').removeClass('active');
+		$('.stores-location-tab-category').eq(listTextIndex).addClass('active');
+	});	
+
 		
 	
 });

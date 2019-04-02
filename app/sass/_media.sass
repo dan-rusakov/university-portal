@@ -18,6 +18,12 @@
 			padding: 90px 40px
 	.timetable-box__content
 		padding: 45px 50px 70px
+	.overviews-box
+		&::before
+			top: 45px
+			bottom: 45px
+			left: 30px
+			right: 30px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -48,6 +54,21 @@
 		display: none
 	.footer-menu
 		margin-bottom: 45px
+	.overviews
+		&__scroll
+			grid-template-columns: repeat(3, 420px)
+			overflow-x: auto
+			padding-bottom: 20px
+	.stores-location-header__text
+		font-size: em(18px)
+	.stores-location-tab__text
+		font-size: em(16px)
+	.stores-location-tab-carousel
+		padding: 0 95px
+		.owl-prev
+			left: 40px
+		.owl-next
+			right: 40px
 
 
 /* Medium Devices, Desktops */
@@ -97,6 +118,17 @@
 	.footer
 		&>div
         	grid-template-columns: repeat(3, 1fr)
+	.stores-location-header
+		&__listText
+			font-size: em(18px)
+		&__text
+			font-size: em(16px)
+		&__content
+			padding: 30px 40px 30px 0
+	.stores-location-tab__text
+		font-size: em(14px)
+	.stores-location-tab-carousel
+		padding: 0 80px
 	
 
 
@@ -194,9 +226,23 @@
 	.footer
 		&>div
         	grid-template-columns: repeat(2, 1fr)
+	.stores-location-header
+		grid-template-columns: 100%
+		&__content
+			padding: 30px 40px
+		&__map
+			order: 1
+			&>*
+				height: 320px !important
+	.stores-location-tab__content
+		grid-template-columns: 100%
+		grid-gap: 40px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.page-banner
+		&__adress
+			font-size: em(18px)
 	.timetable-box__content
 		padding: 30px
 	.timetable
@@ -228,6 +274,45 @@
 		grid-column: 1/3
 	.footer-payment-box
 		margin-bottom: 30px
+	.overviews
+		position: relative
+		padding: 0
+		&__scroll
+			grid-template-columns: 1fr
+		&__description
+			padding: 0 0 50px
+	.overviews-box
+		border-radius: 0
+		margin-bottom: 20px
+		&__content
+			padding: 40px 20px
+		&::before
+			display: none
+		&__img
+			display: none
+	.stores-location-tab
+		padding: 17px 20px	
+		&__title
+			font-size: em(16px)
+		&__arrow
+			font-size: em(15px)
+	.stores-location-tab-carousel
+		padding: 0 
+		.owl-prev
+			left: 0
+		.owl-next
+			right: 0
+	.stores-location-tab
+		border-radius: 0
+		&__content
+			grid-gap: 20px
+	.stores-location
+		&>div
+			padding: 0
+		&__header
+			margin-bottom: 1px
+	.stores-location-header
+		border-radius: 0
 
 
 /* Custom, iPhone Retina */

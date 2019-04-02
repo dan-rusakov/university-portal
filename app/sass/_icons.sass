@@ -21,35 +21,47 @@
 @function icon-char($filename)
     $char: ""
 
-    @if $filename == btn-arrow
+    @if $filename == bold-arrow-bottom
         $char: "\E001"
     
-    @if $filename == carousel-arrow-left
+    @if $filename == bold-arrow-left
         $char: "\E002"
     
-    @if $filename == carousel-arrow-right
+    @if $filename == bold-arrow-right
         $char: "\E003"
     
-    @if $filename == close
+    @if $filename == bold-arrow-top
         $char: "\E004"
     
-    @if $filename == enter
+    @if $filename == btn-arrow
         $char: "\E005"
     
-    @if $filename == form-calendar
+    @if $filename == carousel-arrow-left
         $char: "\E006"
     
-    @if $filename == form-email
+    @if $filename == carousel-arrow-right
         $char: "\E007"
     
-    @if $filename == form-name
+    @if $filename == close
         $char: "\E008"
     
-    @if $filename == form-phone
+    @if $filename == enter
         $char: "\E009"
     
-    @if $filename == search
+    @if $filename == form-calendar
         $char: "\E00A"
+    
+    @if $filename == form-email
+        $char: "\E00B"
+    
+    @if $filename == form-name
+        $char: "\E00C"
+    
+    @if $filename == form-phone
+        $char: "\E00D"
+    
+    @if $filename == search
+        $char: "\E00E"
     
     @return $char
 
@@ -63,6 +75,14 @@
         
         content: icon-char($filename)
 
+.icon-bold-arrow-bottom
+    +icon(bold-arrow-bottom)
+.icon-bold-arrow-left
+    +icon(bold-arrow-left)
+.icon-bold-arrow-right
+    +icon(bold-arrow-right)
+.icon-bold-arrow-top
+    +icon(bold-arrow-top)
 .icon-btn-arrow
     +icon(btn-arrow)
 .icon-carousel-arrow-left
