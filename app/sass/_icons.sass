@@ -21,7 +21,7 @@
 @function icon-char($filename)
     $char: ""
 
-    @if $filename == bold-arrow-bottom
+    @if $filename == bold-arrow-down
         $char: "\E001"
     
     @if $filename == bold-arrow-left
@@ -30,38 +30,62 @@
     @if $filename == bold-arrow-right
         $char: "\E003"
     
-    @if $filename == bold-arrow-top
+    @if $filename == bold-arrow-up
         $char: "\E004"
     
-    @if $filename == btn-arrow
+    @if $filename == book
         $char: "\E005"
     
-    @if $filename == carousel-arrow-left
+    @if $filename == btn-arrow
         $char: "\E006"
     
-    @if $filename == carousel-arrow-right
+    @if $filename == camera
         $char: "\E007"
     
-    @if $filename == close
+    @if $filename == carousel-arrow-left
         $char: "\E008"
     
-    @if $filename == enter
+    @if $filename == carousel-arrow-right
         $char: "\E009"
     
-    @if $filename == form-calendar
+    @if $filename == clapperboard
         $char: "\E00A"
     
-    @if $filename == form-email
+    @if $filename == close
         $char: "\E00B"
     
-    @if $filename == form-name
+    @if $filename == enter
         $char: "\E00C"
     
-    @if $filename == form-phone
+    @if $filename == filter
         $char: "\E00D"
     
-    @if $filename == search
+    @if $filename == form-calendar
         $char: "\E00E"
+    
+    @if $filename == form-email
+        $char: "\E00F"
+    
+    @if $filename == form-name
+        $char: "\E010"
+    
+    @if $filename == form-phone
+        $char: "\E011"
+    
+    @if $filename == man
+        $char: "\E012"
+    
+    @if $filename == play-big
+        $char: "\E013"
+    
+    @if $filename == play-smal
+        $char: "\E014"
+    
+    @if $filename == search
+        $char: "\E015"
+    
+    @if $filename == star
+        $char: "\E016"
     
     @return $char
 
@@ -75,24 +99,32 @@
         
         content: icon-char($filename)
 
-.icon-bold-arrow-bottom
-    +icon(bold-arrow-bottom)
+.icon-bold-arrow-down
+    +icon(bold-arrow-down)
 .icon-bold-arrow-left
     +icon(bold-arrow-left)
 .icon-bold-arrow-right
     +icon(bold-arrow-right)
-.icon-bold-arrow-top
-    +icon(bold-arrow-top)
+.icon-bold-arrow-up
+    +icon(bold-arrow-up)
+.icon-book
+    +icon(book)
 .icon-btn-arrow
     +icon(btn-arrow)
+.icon-camera
+    +icon(camera)
 .icon-carousel-arrow-left
     +icon(carousel-arrow-left)
 .icon-carousel-arrow-right
     +icon(carousel-arrow-right)
+.icon-clapperboard
+    +icon(clapperboard)
 .icon-close
     +icon(close)
 .icon-enter
     +icon(enter)
+.icon-filter
+    +icon(filter)
 .icon-form-calendar
     +icon(form-calendar)
 .icon-form-email
@@ -101,5 +133,13 @@
     +icon(form-name)
 .icon-form-phone
     +icon(form-phone)
+.icon-man
+    +icon(man)
+.icon-play-big
+    +icon(play-big)
+.icon-play-smal
+    +icon(play-smal)
 .icon-search
-    +icon(search)
+    +icon(search)
+.icon-star
+    +icon(star)

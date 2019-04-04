@@ -59,7 +59,7 @@
     display: inline-block
     position: relative
     &::before
-        content: '\E001'
+        content: '\E006'
         font-family: Icons
         position: absolute
         display: inline
@@ -80,7 +80,7 @@
     display: inline-block
     position: relative
     &::before
-        content: '\E001'
+        content: '\E006'
         font-family: Icons
         position: absolute
         display: inline
@@ -144,6 +144,13 @@
         color: #fff
         font-size: em(78px)
         line-height: 1
+
+.rating-box
+    &__star
+        color: #C4C4C4
+        font-size: em(20px)
+        &.active
+            color: $red
 
 
 /* basic classes END */
@@ -794,9 +801,354 @@
     &.active
         display: block
 
-
-
 /* stores location section END */
+/* filter block START */
+
+.filter
+    background-color: #fff
+    border-radius: 4px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+    &__header
+        background-color: $lBlue
+        border-radius: 4px
+        grid-template-columns: 1fr max-content
+        align-items: center
+        padding: 20px 30px
+    &__icon
+        color: $blue
+        line-height: 1
+        font-size: em(18px)
+    &__title
+        margin: 0
+        font-weight: 900
+        color: $blue
+        font-size: em(18px)
+    &__menu
+        margin: 0
+        padding: 0
+        list-style-type: none
+    &__text
+        padding: 20px 30px
+        border-bottom: 1px solid $lBlue
+        color: $blue
+        &:last-of-type
+            border-bottom: none   
+    &__arrow
+        display: none
+        font-size: em(14px)
+        color: $blue   
+        line-height: 1
+        position: relative
+        top: 2px   
+
+/* filter block END */
+/* preview card line START */
+
+.preview-card-line
+    background-color: #fff
+    border-radius: 4px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+    min-height: 164px
+    grid-template-columns: 164px 1fr max-content
+    align-items: center
+    &__img
+        width: 100%
+        height: 100%
+        overflow: hidden
+        border-radius: 4px 0 0 4px
+        grid-row: 1/3
+        img 
+            height: 100%
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+    &__title
+        font-size: em(24px)
+        font-weight: 900
+        margin: 0 0 em(12px)
+        align-self: end
+        padding: 20px 0 0 38px
+    &__text
+        font-size: em(18px)
+        margin: 0
+        line-height: 1.6
+        align-self: start
+        padding: 0 0 20px 38px
+    &__action-box 
+        padding: 20px 38px
+        grid-row: 1/3
+        grid-column: 3/4
+    &__price
+        font-size: em(24px)
+        font-weight: 900
+        margin: 0 0 em(15px)
+        text-align: center
+
+/* preview card line END */
+/* specialist section START */
+
+.specialist
+    padding: 100px 0 15px
+    background-image: url(../img/geometry-pattern.png)
+    background-size: 412px 412px
+    background-position: 0 0
+    background-repeat: repeat
+    &>div 
+        grid-template-columns: 300px 1fr
+        grid-column-gap: 30px
+    &__preview-card-line
+        margin-bottom: 30px 
+
+/* specialist section END */
+/* blog section START */
+
+.blog
+    padding: 100px 0 100px
+    background-image: url(../img/geometry-pattern.png)
+    background-size: 412px 412px
+    background-position: 0 0
+    background-repeat: repeat
+    &>div 
+        grid-template-columns: 300px 1fr
+        grid-column-gap: 30px
+    &__content-right
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 30px
+    &__btn
+        grid-column: 1/5
+        justify-self: center
+        margin-top: 20px
+
+
+/* blog section END */
+/* preview card grid START */
+
+.preview-card-grid
+    height: 300px
+    border-radius: 4px
+    padding: 20px
+    text-decoration: none
+    color: #fff
+    position: relative
+    z-index: 0
+    align-content: end
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border-radius: 4px
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: -1
+    &__title
+        font-size: em(24px)  
+        font-weight: 900
+        line-height: 1.1
+        margin: 0
+    &__topic
+        font-size: em(18px)
+        font-weight: 900
+        color: $lBlue
+        margin: 0 0 em(10px)
+
+/* preview card grid END */
+/* article section START */
+
+.article
+    padding: 100px 0
+    background-image: url(../img/geometry-pattern.png)
+    background-size: 412px 412px
+    background-position: 0 0
+    background-repeat: repeat
+    &>div
+        grid-template-columns: 300px 1fr
+        grid-column-gap: 30px
+    &__article-card
+        margin-bottom: 120px
+
+/* article section END */
+/* article card START */
+
+.article-card
+    background-color: #fff
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+    border-radius: 4px
+    padding: 50px 140px 100px
+    &__topic
+        font-size: em(30px)
+        font-weight: 900
+        color: $blue
+        margin: 0 0 em(5px)
+    &__title
+        font-size: em(48px)
+        font-weight: 900
+        margin: 0 0 em(25px)
+        line-height: 1
+    &__img
+        border-radius: 4px
+        margin-bottom: 50px
+    &__text
+        font-size: em(24px)
+        line-height: 1.3
+        margin: 0 0 em(40px)
+    &__author
+        grid-template-columns: max-content 1fr
+        align-content: start
+        grid-template-rows: max-content 1fr
+    &__author-img
+        grid-row: 1/3
+        width: 70px
+        height: 70px
+        overflow: hidden
+        border-radius: 70px
+        margin-right: 25px   
+    &__author-name
+        font-size: em(18px)
+        font-weight: 900
+        margin: em(3px) 0 em(6px)
+        color: $blue
+    &__published-time
+        font-size: em(14px)
+        color: #999
+        margin: 0
+
+/* article card END */
+/* more articles START */
+
+.more-articles
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-gap: 30px
+    &__title
+        font-size: em(48px)
+        font-weight: 900
+        margin: 0 0 em(5px) 
+        grid-column: 1/5
+    &__btn
+        margin-top: 20px
+        grid-column: 1/5
+        justify-self: center   
+
+/* more articles END */
+/* education club section START */
+
+.education-club
+    padding: 100px 0
+    background-image: url(../img/geometry-pattern.png)
+    background-size: 412px 412px
+    background-position: 0 0
+    background-repeat: repeat
+    &>div
+        grid-template-columns: 1fr 1fr
+        grid-gap: 30px
+    &__category-card
+        height: 520px
+        position: relative
+        text-align: center
+        align-content: center
+        z-index: 0
+        cursor: pointer
+        &::before
+            content: ''
+            position: absolute
+            top: 50px
+            bottom: 50px
+            right: 80px
+            left: 80px
+            display: block
+            border: 10px solid $lBlue
+            z-index: -1
+        &:hover
+            &::before
+                background-color: $lBlue
+            .education-club__icon
+                color: #fff
+    &__title
+        font-size: em(48px)
+        font-weight: 900
+        color: #fff
+        margin: 0
+    &__icon
+        font-size: em(120px)
+        color: $lBlue
+        line-height: 1
+
+/* education club section END */
+/* reviews section START */
+
+.reviews
+    padding: 100px 0 120px
+    background-image: url(../img/geometry-pattern.png)
+    background-size: 412px 412px
+    background-position: 0 0
+    background-repeat: repeat
+    &>div
+        grid-gap: 30px
+    &__btn
+        margin-top: 20px
+        justify-self: center  
+
+/* reviews section END */
+/* review card START */
+
+.review-card
+    background-color: #fff
+    border-radius: 4px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+    grid-template-columns: max-content 1fr
+    padding-right: 35px
+    &__video
+        width: 480px
+        border-radius: 4px 0 0 4px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        grid-row: 1/5
+        align-content: center
+        justify-content: center
+        cursor: pointer
+        margin-right: 35px
+    &__play-big
+        font-size: em(80px)
+        color: $lBlue
+    &__btn
+        background-color: transparent
+        border: 1px solid $red
+        border-radius: 30em
+        font-size: em(18px)
+        color: $red
+        padding: em(16px) em(25px) em(16px) em(45px)
+        text-decoration: none
+        display: inline-block
+        position: relative
+        &::before
+            content: '\E014'
+            font-family: Icons
+            position: absolute
+            display: inline
+            left: em(20px)
+            top: 50%
+            transform: translateY(-50%)
+            font-size: em(18px)
+            color: $red
+        display: none
+    &__name
+        font-size: em(24px)
+        font-weight: 900
+        margin: em(10px) 0 em(5px)
+    &__rating
+        margin-bottom: em(8px)
+    &__text
+        margin-bottom: 0
+    &__published-time
+        color: #999999
+        margin-bottom: em(17px) 
+
+/* review card END */
 
 
 @import "media" // Всегда в конце
