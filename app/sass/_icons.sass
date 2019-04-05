@@ -54,41 +54,56 @@
     @if $filename == close
         $char: "\E00B"
     
-    @if $filename == enter
+    @if $filename == doc
         $char: "\E00C"
     
-    @if $filename == filter
+    @if $filename == enter
         $char: "\E00D"
     
-    @if $filename == form-calendar
+    @if $filename == filter
         $char: "\E00E"
     
-    @if $filename == form-email
+    @if $filename == form-calendar
         $char: "\E00F"
     
-    @if $filename == form-name
+    @if $filename == form-email
         $char: "\E010"
     
-    @if $filename == form-phone
+    @if $filename == form-name
         $char: "\E011"
     
-    @if $filename == location
+    @if $filename == form-phone
         $char: "\E012"
     
-    @if $filename == man
+    @if $filename == jpg
         $char: "\E013"
     
-    @if $filename == play-big
+    @if $filename == location
         $char: "\E014"
     
-    @if $filename == play-smal
+    @if $filename == man
         $char: "\E015"
     
-    @if $filename == search
+    @if $filename == pdf
         $char: "\E016"
     
-    @if $filename == star
+    @if $filename == play-big
         $char: "\E017"
+    
+    @if $filename == play-smal
+        $char: "\E018"
+    
+    @if $filename == png
+        $char: "\E019"
+    
+    @if $filename == search
+        $char: "\E01A"
+    
+    @if $filename == star
+        $char: "\E01B"
+    
+    @if $filename == xls
+        $char: "\E01C"
     
     @return $char
 
@@ -124,6 +139,8 @@
     +icon(clapperboard)
 .icon-close
     +icon(close)
+.icon-doc
+    +icon(doc)
 .icon-enter
     +icon(enter)
 .icon-filter
@@ -136,15 +153,23 @@
     +icon(form-name)
 .icon-form-phone
     +icon(form-phone)
+.icon-jpg
+    +icon(jpg)
 .icon-location
     +icon(location)
 .icon-man
     +icon(man)
+.icon-pdf
+    +icon(pdf)
 .icon-play-big
     +icon(play-big)
 .icon-play-smal
     +icon(play-smal)
+.icon-png
+    +icon(png)
 .icon-search
     +icon(search)
 .icon-star
-    +icon(star)
+    +icon(star)
+.icon-xls
+    +icon(xls)

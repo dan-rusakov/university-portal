@@ -1405,6 +1405,80 @@
         margin-top: 20px   
     
 /* should read section END */
+/* documents section START */
+
+.documents
+    padding: 110px 0 140px
+    background-color: $lBlue
+    text-align: center
+    &>div
+        grid-template-columns: repeat(5, 1fr)
+        grid-gap: 40px
+    &__title
+        font-size: em(48px)
+        margin: 0 0 em(5px)
+        font-weight: 900
+        color: $blue
+        text-align: center
+        grid-column: 1/6
+.document-box
+    &__url
+        color: $blue
+        font-size: em(18px)
+    &__icon
+        font-size: em(20px)
+        color: $blue
+        position: relative
+        top: 3px   
+
+/* documents section END */
+/* course box full section START */
+
+.course-box-full
+    padding: 60px 0 150px
+    background-image: url(../img/geometry-pattern.png)
+    background-size: 412px 412px
+    background-position: 0 0
+    background-repeat: repeat
+
+/* course box full section END */
+/* course card full START */
+
+.course-card-full
+    background-color: #fff
+    border-radius: 5px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+    grid-template-columns: 590px 1fr
+    padding: 30px 70px 30px 30px
+    grid-column-gap: 60px
+    &__title
+        font-size: em(60px)
+        margin: 0 0 em(15px)
+        line-height: 1.1
+    &__text
+        font-size: em(18px)
+        margin: 0 0 em(35px)
+    &__price-box
+        grid-template-columns: max-content max-content
+        grid-column-gap: 30px
+        align-items: center
+        justify-content: end
+    &__price
+        font-size: em(36px)
+        font-weight: 900
+        margin: 0
+    &__btn
+        font-size: em(24px)
+        font-weight: 900
+        color: #fff
+        padding: em(10px) em(30px)
+        background-color: $red
+        border-radius: 100px
+        text-decoration: none
+    &__img
+        border-radius: 4px
+
+/* course card full END */
 
 
 @import "media" // Всегда в конце
