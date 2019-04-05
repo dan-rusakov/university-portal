@@ -72,20 +72,23 @@
     @if $filename == form-phone
         $char: "\E011"
     
-    @if $filename == man
+    @if $filename == location
         $char: "\E012"
     
-    @if $filename == play-big
+    @if $filename == man
         $char: "\E013"
     
-    @if $filename == play-smal
+    @if $filename == play-big
         $char: "\E014"
     
-    @if $filename == search
+    @if $filename == play-smal
         $char: "\E015"
     
-    @if $filename == star
+    @if $filename == search
         $char: "\E016"
+    
+    @if $filename == star
+        $char: "\E017"
     
     @return $char
 
@@ -133,6 +136,8 @@
     +icon(form-name)
 .icon-form-phone
     +icon(form-phone)
+.icon-location
+    +icon(location)
 .icon-man
     +icon(man)
 .icon-play-big
