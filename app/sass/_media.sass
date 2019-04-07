@@ -135,6 +135,8 @@
 		padding: 30px
 		&__title
 			font-size: em(34px)	
+	.course-card-about
+		padding: 60px 100px 70px
 
 
 /* Medium Devices, Desktops */
@@ -300,6 +302,14 @@
 			font-size: em(20px)
 		&__price
 			font-size: em(26px)
+	.course-box-full__tabs
+		grid-template-columns: 1fr 1fr 1fr
+	.course-card-about
+		padding: 30px 60px
+		&__title
+			font-size: em(28px)
+		&__text
+			font-size: em(16px)
 		
 
 /* Small Devices, Tablets */
@@ -540,6 +550,17 @@
 			border-radius: 4px 4px 0 0
 		&__title, &__text, &__price-box
 			padding: 0 30px
+	.course-box-full
+		&__tabs
+			grid-template-columns: 1fr 1fr
+		&__btn
+			margin-top: 30px
+	.course-card-about
+		padding: 20px 30px 10px
+		&__title
+			font-size: em(24px)
+			line-height: 1.1
+	
 	
 
 
@@ -741,6 +762,11 @@
 		padding: 0 0 100px
 		&>div
 			padding: 0
+		&__tabs
+			grid-gap: 10px
+			padding: 0 20px
+		&__tab
+			font-size: em(14px)
 	.course-card-full
 		margin-bottom: 80px	
 		border-radius: 0
