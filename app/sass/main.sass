@@ -186,13 +186,13 @@
 	grid-column: span 4
 	margin: 0
 	padding: 0
-	&__list
+	&__text
 		list-style-type: none
 		display: inline-block
 		margin-right: 75px
 		&:last-child
 			margin-right: 0 
-	&__text
+	&__url
 		font-size: em(18px)
 		font-weight: 900
 		color: $blue
@@ -219,7 +219,12 @@
 		color: $blue
 		&::-webkit-input-placeholder
 			color: $blue
-        
+
+.search-link, .enter-link 
+	text-decoration: none
+	i
+		color: $lBlue
+
 
 .menu-bottom-line
 	background-color: $blue
@@ -234,10 +239,10 @@
 	grid-column: 3 / span 8
 	margin: 0
 	padding: 0
-	&__list
+	&__text
 		list-style-type: none
 		display: inline-block
-	&__text
+	&__url
 		color: #fff
 		text-decoration: none
 		font-size: em(14px)
@@ -282,6 +287,7 @@
 	background-color: $lBlue
 	transform: translateX(-100%)
 	transition: 0.25s ease transform
+	z-index: 1
 	&.open-mobile-menu
 		transform: none
 		.menu-box-mobile__close-icon
@@ -316,6 +322,7 @@
 			bottom: 1px solid #96D4E9
 	&__enter-line-img
 		margin-right: 20px
+		color: #53B5D1
 	&__enter-line-text
 		font-size: em(14px)
 		margin: 0
@@ -412,6 +419,7 @@
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 	border-radius: 4px
 	padding: 30px 40px
+	text-decoration: none
 	&__img
 		border-radius: 20em
 		grid-row: 1/3
@@ -425,6 +433,7 @@
 		margin: 0 0 em(5px)
 		font-weight: 900
 		align-self: start
+		color: $dark
 	&__published-time
 		font-size: em(14px)
 		margin: 0
@@ -631,13 +640,17 @@
 		font-weight: 900
 		color: #fff
 		margin: 0
+		.footer-menu__url 
+			color: #fff
 	&__text
 		font-size: em(18px)
-		color: $lBlue
 		margin: 0 0 em(8px)
 		line-height: 1.2
-		&:nth-of-type(1)
-			margin-top: em(35px)
+		&:nth-of-type(2)
+			margin-top: em(10px)
+	&__url 
+		color: $lBlue
+		text-decoration: none
 .footer-payment-box
 	&__img 
 		border-radius: 4px
@@ -735,6 +748,7 @@
 		padding-left: 16px
 		color: $blue
 		position: relative
+		cursor: pointer
 		&::before
 			content: ''
 			position: absolute
@@ -755,7 +769,6 @@
 	background-color: #fff
 	border-radius: 4px
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
-	padding: 30px 35px
 	margin-bottom: 1px
 	&__title
 		font-size: em(18px)
@@ -764,6 +777,8 @@
 	&__header
 		grid-template-columns: 1fr max-content
 		align-items: center
+		padding: 30px 35px
+		cursor: pointer
 		&.active 
 			& + .stores-location-tab__content
 				display: grid
@@ -775,7 +790,8 @@
 	&__content
 		grid-template-columns: 40% 60%
 		display: none
-		margin-top: 28px
+		//margin-top: 28px
+		padding: 0 35px 30px
 	&__arrow
 		color: $lBlue
 		font-size: em(22px)
@@ -1046,6 +1062,7 @@
 		align-content: center
 		z-index: 0
 		cursor: pointer
+		text-decoration: none
 		&::before
 			content: ''
 			position: absolute
@@ -1106,6 +1123,7 @@
 		justify-content: center
 		cursor: pointer
 		margin-right: 35px
+		text-decoration: none
 	&__play-big
 		font-size: em(80px)
 		color: $lBlue
@@ -1120,7 +1138,7 @@
 		display: inline-block
 		position: relative
 		&::before
-			content: '\E014'
+			content: '\E018'
 			font-family: Icons
 			position: absolute
 			display: inline
@@ -1520,6 +1538,7 @@
 		display: block
 
 /* course card END */
+
 
 
 @import "media" // Всегда в конце

@@ -188,6 +188,8 @@ $(function() {
 
 	$('.stores-location-header__listText').on('click', function(){
 		var listTextIndex = $(this).index();
+		$('.stores-location-header__listText').removeClass('active');
+		$(this).addClass('active');
 		$('.stores-location-tab-category').removeClass('active');
 		$('.stores-location-tab-category').eq(listTextIndex).addClass('active');
 	});	

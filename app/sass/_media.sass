@@ -5,10 +5,9 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1600px)	
 	.main-menu
-		&__list
-			margin-right: 30px
 		&__text
-
+			margin-right: 30px
+		&__url
 			font-size: em(17px)
 	.child-skills
 		&__title
@@ -43,14 +42,14 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	.main-menu
-		&__list
-			margin-right: 15px
 		&__text
+			margin-right: 15px
+		&__url
 			font-size: em(13px)
 	.logo__img
 		width: 73px
 	.bottom-menu
-		&__text
+		&__url
 			font-size: em(13px)
 	.page-banner
 		padding: 90px 0
@@ -569,8 +568,12 @@
 	.page-banner
 		&__adress
 			font-size: em(18px)
-	.timetable-box__content
-		padding: 30px
+	.timetable-box
+		border-radius: 0
+		&__content
+			padding: 30px
+		&__img
+			border-radius: 0
 	.timetable
 		padding: 40px 0 80px
 		&__title
@@ -617,7 +620,10 @@
 		&__img
 			display: none
 	.stores-location-tab
-		padding: 17px 20px	
+		&__header
+			padding: 17px 20px	
+		&__content
+			padding: 0 20px 17px
 		&__title
 			font-size: em(16px)
 		&__arrow
@@ -774,11 +780,33 @@
 			border-radius: 0
 		&__price-box
 			justify-content: space-between
+	.course-card-about
+		border-radius: 0
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+	.main-btn, .sec-btn, .more-btn
+		font-size: em(14px)
+	.page-banner__title
+		font-size: em(28px)
+	.child-skills__title
+		font-size: em(22px)
+	.course-card-full
+		&__price
+			font-size: em(24px)
+		&__btn
+			font-size: em(18px)
+	.article-card__title
+		font-size: em(28px)
+	.authors__tab, .course-box-full__tab
+		font-size: em(12px)
+		padding: 10px
+	.program-help
+		&__form
+			grid-template-columns: 1fr
+		&__form-btn
+			font-size: em(18px)
 
 
 /*==========  Mobile First  ==========*/
