@@ -420,7 +420,7 @@
 	border-radius: 4px
 	padding: 30px 40px
 	text-decoration: none
-	&__img
+	&__img  
 		border-radius: 20em
 		grid-row: 1/3
 	&__header
@@ -841,6 +841,7 @@
 		padding: 20px 30px
 		border-bottom: 1px solid $lBlue
 		color: $blue
+		cursor: pointer
 		&:last-of-type
 			border-bottom: none   
 	&__arrow
@@ -867,6 +868,7 @@
 		overflow: hidden
 		border-radius: 4px 0 0 4px
 		grid-row: 1/3
+		position: relative
 		img 
 			height: 100%
 			position: relative
@@ -893,6 +895,26 @@
 		font-weight: 900
 		margin: 0 0 em(15px)
 		text-align: center
+	&__rating
+		display: none 
+	&__label
+		position: absolute
+		top: 0
+		left: 0
+		border-top: 50px solid $red
+		border-right: 50px solid transparent
+		width: 0px
+		height: 0px
+		z-index: 1
+	&__label-text
+		position: absolute
+		color: #fff
+		font-size: em(18px)
+		font-weight: 900
+		z-index: 2
+		top: -64px
+		transform: rotate(-45deg)
+
 
 /* preview card line END */
 /* specialist section START */
@@ -1538,7 +1560,57 @@
 		display: block
 
 /* course card END */
+/* entertainment section START */
 
+.entertainment
+	padding: 100px 0 120px
+	background-image: url(../img/geometry-pattern.png)
+	background-size: 412px 412px
+	background-position: 0 0
+	background-repeat: repeat
+	&>div
+		grid-template-columns: 300px 1fr
+		grid-gap: 30px
+	&__preview-card-line
+		margin-bottom: 30px
+	&__btn
+		justify-self: center
+		margin-top: 20px 
+
+/* entertainment section END */
+/* contacts section START */
+
+.contacts
+	&>div
+		grid-template-columns: 50% 50%
+	&__content
+		background-color: $lBlue
+		padding: 80px 160px
+	&__title
+		font-size: em(62px)
+		font-weight: 900
+		color: $blue
+		margin: 0 0 em(14px)
+	&__list
+		margin: 0
+		padding: 0
+		list-style-type: none
+	&__list-item
+		grid-template-columns: 40px 1fr 
+		margin-bottom: 20px
+	&__list-text
+		margin: 0
+		color: $blue
+		font-size: em(24px)
+	&__icon
+		color: $blue
+		font-size: em(24px) 
+	&__text
+		font-size: em(24px)
+		color: $blue
+		margin: 0 0 em(30px)
+
+/* contacts section END */
 
 
 @import "media" // Всегда в конце

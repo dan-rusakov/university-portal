@@ -63,7 +63,7 @@ gulp.task('iconfont', function(){
 		fontName: fontName,
 		prependUnicode: true,
 		fontHeight: 1000,
-		normalize: true,
+		normalize: true, 
 		timestamp: runTimestamp
 	}))
 	.pipe(gulp.dest('app/fonts/'));
