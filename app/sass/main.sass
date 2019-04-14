@@ -36,6 +36,7 @@
 	padding: em(16px) em(55px)
 	text-decoration: none
 	display: inline-block
+	cursor: pointer
 
 .sec-btn
 	background-color: transparent
@@ -47,6 +48,7 @@
 	padding: em(16px) em(55px)
 	text-decoration: none
 	display: inline-block
+	cursor: pointer
 
 .more-btn
 	background-color: transparent
@@ -58,6 +60,7 @@
 	text-decoration: none
 	display: inline-block
 	position: relative
+	cursor: pointer
 	&::before
 		content: '\E006'
 		font-family: Icons
@@ -79,6 +82,7 @@
 	text-decoration: none
 	display: inline-block
 	position: relative
+	cursor: pointer
 	&::before
 		content: '\E006'
 		font-family: Icons
@@ -844,7 +848,9 @@
 		cursor: pointer
 		&:last-of-type
 			border-bottom: none   
-	&__arrow
+		&.active
+			font-weight: 900
+	&__arrow 
 		display: none
 		font-size: em(14px)
 		color: $blue   
@@ -943,7 +949,7 @@
 	&>div 
 		grid-template-columns: 300px 1fr
 		grid-column-gap: 30px
-	&__content-right
+	&__content-right .rows
 		grid-template-columns: 1fr 1fr 1fr 1fr
 		grid-gap: 30px
 	&__btn
