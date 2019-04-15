@@ -9,42 +9,225 @@
 			margin-right: 30px
 		&__url
 			font-size: em(17px)
+	.services
+		&__content-right
+			grid-template-columns: 1fr 1fr 1fr
+		&__pagination
+			grid-column: 1/4
+
+		
+	.container
+		padding: 0 40px
+	.main-btn, .sec-btn, .more-btn, .more-btn-red
+		font-size: em(14px)
+	.section-title
+		font-size: em(36px)
+	.page-banner
+		&__subtitle
+			font-size: em(24px)
+		&__title
+			font-size: em(48px)
+	.note
+		&__title
+			font-size: em(18px)
+		&__text
+			font-size: em(14px)
+		&__img
+			width: 50px
+			height: 50px
+		&__header
+			grid-column-gap: 15px
 	.child-skills
 		&__title
-			font-size: em(42px)
+			font-size: em(36px)
 			margin-bottom: 40px
 		&__inner
-			padding: 90px 40px
-	.timetable-box__content
-		padding: 45px 50px 70px
+			padding: 60px 90px 80px
+	.main-form
+		&__input
+			font-size: em(14px)
+		&__input-inner i
+			font-size: em(14px)
+	.timetable-box
+		&__content
+			padding: 45px 50px 70px
+		&__img
+			height: 240px
+		&__date, &__author
+			font-size: em(14px)
+		&__title
+			font-size: em(24px)
+		&__content
+			padding: 30px 50px 45px
+	.partners-box
+		height: 240px
+	.email-delivery__subtitle
+		margin-bottom: em(30px)
+	.contacts
+		&__content
+			padding: 40px 150px 60px
+		&__title
+			font-size: em(48px)
+		&__text
+			font-size: em(16px)
+		&__list-text
+			font-size: em(16px)
+		&__list-item
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 30px
+	.preview-card-line
+		&__text
+			font-size: em(14px)
+			line-height: 1.35
+		&__title
+			line-height: 1.2
+			font-size: em(20px)
 	.overviews-box
 		&::before
 			top: 45px
 			bottom: 45px
 			left: 30px
 			right: 30px
-	.preview-card-line
+		&__title
+			font-size: em(24px)
 		&__text
 			font-size: em(14px)
-	.preview-card-grid__title
-		font-size: em(20px)
-	.services
-		&__content-right
-			grid-template-columns: 1fr 1fr 1fr
-		&__pagination
-			grid-column: 1/4
-	.course-card-full
+	.overviews
+		&__description
+			font-size: em(14px)
+	.stores-location-header
+		&__listText
+			font-size: em(20px)
+		&__text
+			font-size: em(14px)		
+	.stores-location-tab
+		&__text
+			font-size: em(14px)
+		&__header
+			padding: 20px 25px
 		&__title
-			font-size: em(48px)
+			font-size: em(16px)
+		&__arrow
+			font-size: em(16px)
+			position: relative
+			top: 3px
+		&__content
+			padding: 0 25px 20px
+	.stores-location-tab-carousel 
+		.owl-next 
+			right: 100px
+			i 
+				font-size: em(20px)
+		.owl-prev 
+			left: 100px
+			i
+				font-size: em(20px)
+	.preview-card-grid
+		height: 240px
+		&__title
+			font-size: em(18px)
+		&__topic
+			font-size: em(15px)
+	.article-card
+		padding: 50px 100px 100px
+		&__topic
+			font-size: em(20px)
+		&__title
+			font-size: em(32px)
 		&__text
 			font-size: em(16px)
-	.contacts
-		&__content
-			padding: 70px 150px
+		&__author-img
+			width: 50px
+			height: 50px
+			margin-right: 15px
+			img 
+				max-width: 100%
+		&__author-name
+			font-size: em(16px)
+			margin-top: 0
+	.more-articles
+		grid-gap: 20px
+		&__title
+			font-size: em(32px)
+	.education-club
+		&>div
+			grid-gap: 20px
+		&__title
+			font-size: em(32px)
+		&__icon
+			font-size: em(90px)
+		&__category-card
+			height: 440px
+	.review-card
 		&__text
+			font-size: em(14px)
+		&__published-time
+			font-size: em(14px)
+		&__name
 			font-size: em(20px)
-		&__list-text
+		&__video
+			width: 340px
+	.authors__tab
+		font-size: em(14px)
+	.author-card
+		padding: 50px 110px 0
+		&__name
+			font-size: em(28px)
+		&__profession
 			font-size: em(20px)
+		&__description
+			font-size: em(14px)
+	.program-help__text
+		font-size: em(14px)
+	.documents
+		padding: 80px 0 110px
+		&__title
+			font-size: em(34px)
+			margin-bottom: 0
+	.course-card-full
+		grid-template-columns: 440px 1fr
+		&__title
+			font-size: em(40px)
+		&__text
+			font-size: em(14px)
+		&__price
+			font-size: em(26px)
+		&__btn
+			font-size: em(18px)
+		&__tab
+			font-size: em(14px)
+	.course-card-about
+		padding: 50px 110px 60px
+		&__title
+			font-size: em(28px)
+		&__text
+			font-size: em(14px)
+	.footer-menu
+		&__title
+			font-size: em(16px)
+		&__text
+			font-size: em(14px)
+	.footer-payment-box__img
+		width: 50px
+	.service-card
+		&__topic
+			font-size: em(14px)
+		&__title
+			font-size: em(18px)
+		&__description
+			font-size: em(14px)
+		&__specialist-name
+			font-size: em(16px)
+		&__info-text
+			font-size: em(14px)
+		&__price
+			font-size: em(16px)
+		&__btn
+			font-size: em(16px)
+		&__specialist-profession
+			font-size: em(12px)
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
