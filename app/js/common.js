@@ -77,7 +77,35 @@ $(function() {
 
 	// create partners carousel
 
-	var owlPartners = $('.partners-carousel'),
+	$('.partners-carousel').owlCarousel({
+		loop:false,
+		nav: true,
+		dots: false,
+		margin:20,
+		navText: ['<i class="icon-carousel-arrow-left"></i>','<i class="icon-carousel-arrow-right"></i>'],
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav: false,
+				dots: true
+			},
+			768:{
+				items:2
+			},
+			992:{
+				items:3
+			},
+			1200:{
+				items:4
+			},
+			1600:{
+				items:5
+			}
+		}
+	});
+
+	/*var owlPartners = $('.partners-carousel'),
 	owlOptions = {
 		loop:false,
 		nav: true,
@@ -100,7 +128,7 @@ $(function() {
 			}
 		}
 	};
-
+	
 	if ( $(window).width() > 768 ) {
 		var owlActive = owlPartners.owlCarousel(owlOptions);
 		owlPartners.addClass('owl-carousel');
@@ -123,7 +151,7 @@ $(function() {
 			owlPartners.removeClass('owl-carousel');
 		  }
 		}
-	  });
+	});*/
 
 	// create popup gallery for tabs
 

@@ -586,6 +586,11 @@
 		left: 50px
 	.owl-next 
 		right: 50px
+	.owl-dot 
+		span
+			background-color: #fff
+		&.active span, &:hover span
+			background-color: #008eb3
 
 /* partners section END */
 /* email delivery section START */
@@ -1201,7 +1206,7 @@
 	&>div 
 		grid-template-columns: 300px 1fr
 		grid-column-gap: 30px
-	&__content-right
+	&__content-right .rows
 		grid-template-columns: 1fr 1fr 1fr 1fr
 		grid-gap: 30px
 	&__pagination
