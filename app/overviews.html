@@ -456,54 +456,36 @@
 	</section>
 	<section class="article">
 		<div class="container grid">
-			<div class="article__content-left">
-				<div class="filter article__filter">
-					<div class="filter__header grid">
-						<p class="filter__title">Фильтры</p>
-						<i class="icon-filter filter__icon"></i>
-						<i class="icon-bold-arrow-down filter__arrow"></i>
-					</div>
-					<div class="filter__content">
-						<ul class="filter__menu">
-							<li class="filter__text active">все</li>
-							<li class="filter__text">консультация психолога</li>
-							<li class="filter__text">консультация юриста</li>
-						</ul>
-					</div>
+			<div class="article-card article__article-card">
+				<p class="article-card__topic">#тема1</p>
+				<p class="article-card__title">Статья о чем-то интересном и необычном</p>
+				<img src="img/article-card-img.jpg" alt="" class="article-card__img img-responsive">
+				<p class="article-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="article-card__author grid">
+					<div class="article-card__author-img"><img src="img/__note-img.jpg" alt="" class=""></div>	
+					<p class="article-card__author-name">Кристина Никифорова</p>
+					<p class="article-card__published-time">3 часа</p>
 				</div>
 			</div>
-			<div class="article__content-right">
-				<div class="article-card article__article-card">
-					<p class="article-card__topic">#тема1</p>
-					<p class="article-card__title">Статья о чем-то интересном и необычном</p>
-					<img src="img/article-card-img.jpg" alt="" class="article-card__img img-responsive">
-					<p class="article-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<div class="article-card__author grid">
-						<div class="article-card__author-img"><img src="img/__note-img.jpg" alt="" class=""></div>	
-						<p class="article-card__author-name">Кристина Никифорова</p>
-						<p class="article-card__published-time">3 часа</p>
-					</div>
-				</div>
-				<div class="more-articles grid">
-					<p class="more-articles__title">Похожие статьи</p>
-					<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
-						<p class="preview-card-grid__topic">#Тема1</p>
-						<p class="preview-card-grid__title">Статья о чем-то интересном</p>
-					</a>
-					<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
-						<p class="preview-card-grid__topic">#Тема1</p>
-						<p class="preview-card-grid__title">Статья о чем-то интересном</p>
-					</a>
-					<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
-						<p class="preview-card-grid__topic">#Тема1</p>
-						<p class="preview-card-grid__title">Статья о чем-то интересном</p>
-					</a>
-					<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
-						<p class="preview-card-grid__topic">#Тема1</p>
-						<p class="preview-card-grid__title">Статья о чем-то интересном</p>
-					</a>
-					<a href="#" class="more-articles__btn more-btn">Показать больше статей</a>
-				</div>
+			<div class="more-articles grid">
+				<p class="more-articles__title">Похожие статьи</p>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="more-articles__btn more-btn">Показать больше статей</a>
 			</div>
 		</div>
 	</section>
@@ -854,6 +836,63 @@
 			<a href="#" class="more-btn course-box-full__btn">Прочитать больше о центре</a>
 		</div>
 	</section>
+	<section class="search">
+		<div class="container grid">
+			<h2 class="search__title">Результаты поиска</h2>
+			<div class="search__result-box grid">
+				<p class="search__result-title">Статьи</p>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+			</div>
+			<div class="search__result-box grid">
+				<p class="search__result-title">Статьи</p>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a href="#" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+				<a data-fancybox data-src="#subscribe-popup" href="javascript:;" class="preview-card-grid grid" style="background-image: url(img/preview-card-grid-img1.jpg)">
+					<p class="preview-card-grid__topic">#Тема1</p>
+					<p class="preview-card-grid__title">Статья о чем-то интересном</p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="p404">
+		<div class="container">
+			<h2 class="p404__title">404</h2>
+			<p class="p404__text">Ой, кажется такой страницы нет :( Вы можете вернуться на <a href="/" class="p404__url">главную</a></p>
+		</div>
+	</section>
 	<footer class="footer">
 		<div class="container grid">
 			<ul class="footer-menu">
@@ -932,6 +971,30 @@
 			</label>
 			<input type="submit" value="Узнать" data-popup="#child-skills-popup" class="main-btn child-skills-popup__btn">
 			<p class="main-form__personal-data child-skills-popup__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="main-form__personal-data-link">персональных данных</a></p>
+		</form>
+	</div>
+
+	<div style="display: none;" id="subscribe-popup" class="subscribe-popup">
+		<p class="subscribe-popup__title">Заполните форму:</p>
+		<form class="main-form subscribe-popup__form grid">
+			<label for="" class="main-form__input-inner subscribe-popup__input-inner">
+				<i class="icon-form-name"></i>
+				<input type="text" class="main-form__input subscribe-popup__input" placeholder="Имя">
+			</label>
+			<label for="" class="main-form__input-inner subscribe-popup__input-inner">
+				<i class="icon-form-name"></i>
+				<input type="text" class="main-form__input subscribe-popup__input" placeholder="Фамилия">
+			</label>
+			<label for="" class="main-form__input-inner subscribe-popup__input-inner">
+				<i class="icon-form-email"></i>
+				<input type="text" class="main-form__input subscribe-popup__input" placeholder="Email">
+			</label>
+			<label for="" class="main-form__input-inner subscribe-popup__input-inner">
+				<i class="icon-form-phone"></i>
+				<input type="text" class="main-form__input subscribe-popup__input" placeholder="Телефон">
+			</label>
+			<p class="main-form__personal-data subscribe-popup__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="main-form__personal-data-link subscribe-popup__personal-data-link">персональных данных</a></p>
+			<input type="submit" value="Записаться" class="main-btn subscribe-popup__btn">
 		</form>
 	</div>
 	

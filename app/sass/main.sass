@@ -1009,9 +1009,6 @@
 	background-size: 412px 412px
 	background-position: 0 0
 	background-repeat: repeat
-	&>div
-		grid-template-columns: 300px 1fr
-		grid-column-gap: 30px
 	&__article-card
 		margin-bottom: 120px
 
@@ -1223,6 +1220,8 @@
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 	&__content
 		padding: 20px
+		height: calc(100% - 200px)
+		grid-template-rows: repeat(3, max-content) 1fr
 	&__img
 		height: 200px
 		background-size: cover
@@ -1255,6 +1254,7 @@
 	&__price-box
 		grid-template-columns: max-content 1fr
 		align-items: center
+		align-self: end
 	&__btn
 		justify-self: end
 		background-color: $red
@@ -1262,10 +1262,10 @@
 		text-decoration: none
 		color: #fff
 		font-weight: 900
-		font-size: em(18px)
+		font-size: em(16px)
 		padding: em(10px) em(30px)
 	&__price
-		font-size: em(24px)
+		font-size: em(20px)
 		font-weight: 900
 		margin: 0
 	&__description
@@ -1580,8 +1580,6 @@
 	background-size: 412px 412px
 	background-position: 0 0
 	background-repeat: repeat
-	&>div
-		grid-template-columns: 300px 1fr
 		grid-gap: 30px
 	&__preview-card-line
 		margin-bottom: 30px
@@ -1623,6 +1621,83 @@
 		margin: 0 0 em(30px)
 
 /* contacts section END */
+/* search section START */
+
+.search
+	padding: 50px 0 20px
+	background-image: url(../img/geometry-pattern.png)
+	background-size: 412px 412px
+	background-position: 0 0
+	background-repeat: repeat
+	&__result-box
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		grid-gap: 30px
+		margin-bottom: 100px
+	&__title
+		font-size: em(62px)
+		font-weight: 900
+		margin: 0 0 em(18px)
+	&__result-title
+		font-size: em(48px)
+		font-weight: 900
+		margin: 0 0 em(5px)
+		grid-column: 1/5
+
+/* search section END */
+/* 404 page START */
+
+.p404
+	padding: 130px 0 300px
+	background-image: url(../img/geometry-pattern.png)
+	background-size: 412px 412px
+	background-position: 0 0
+	background-repeat: repeat
+	text-align: center
+	&__title
+		font-size: em(218px)
+		font-weight: 900
+		color: $blue
+		margin: 0
+	&__text
+		font-size: em(24px)
+		margin: 0 auto
+		max-width: 460px
+	&__url
+		color: $blue
+		text-decoration: none
+
+/* 404 page END */
+/* subscribe popup START */
+
+.subscribe-popup
+	max-width: 740px
+	border-radius: 4px
+	&__form
+		grid-template-columns: 1fr 1fr
+		grid-gap: 20px
+	&__input
+		border: 1px solid $blue
+		width: 100%
+		color: $blue
+		font-size: em(18px)
+		&::placeholder
+			color: $blue
+	&__input-inner
+		i 
+			color: $blue
+	&__personal-data-link
+		color: $lBlue
+	&__title
+		font-size: em(36px)
+		font-weight: 900
+		margin: 0 0 em(18px)
+		line-height: 1.1
+	&__description
+		font-size: em(18px)
+		margin: em(8px) 0 em(40px)
+
+
+/* subscribe popup END */
 
 
 @import "media" // Всегда в конце

@@ -44,7 +44,8 @@ $(function() {
 		$('.menu-box-mobile').addClass('open-mobile-menu');
 	});
 
-	$('.menu-box-mobile__close-icon').on('click', function(){
+	$('.menu-box-mobile__close-icon').on('click', function(evt){
+		evt.preventDefault();
 		$(".menu-box-mobile").removeClass('open-mobile-menu');
 	});
 
