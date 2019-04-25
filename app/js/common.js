@@ -59,9 +59,10 @@ $(function() {
 
 	$('.timetable-carousel').owlCarousel({
 		loop:false,
-		nav: false,
+		nav: true,
 		dots: true,
 		margin:20,
+		navText: ['<i class="icon-carousel-arrow-left"></i>','<i class="icon-carousel-arrow-right"></i>'],
 		responsiveClass:true,
 		responsive:{
 			0:{

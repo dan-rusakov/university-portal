@@ -557,6 +557,35 @@
 		font-size: em(18px)
 		margin: 0 0 em(45px)
 
+.timetable-carousel
+	.owl-prev
+		left: 30px
+		top: 25%
+	.owl-next 
+		right: 30px
+		top: 25%
+	.owl-stage-outer
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 15px
+			width: 110px
+			opacity: 0.4
+			background-color: #fff
+			z-index: 1
+		&::after
+			content: ''
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 15px
+			width: 110px
+			opacity: 0.4
+			background-color: #fff
+			z-index: 1
+
 /* timetable section END */
 /* partners section START */
 
