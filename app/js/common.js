@@ -51,7 +51,7 @@ $(function() {
 
 	// create child skills popup
 
-	$(".child-skills__btn").fullScreenPopup({
+	$("#child-skills__btn").fullScreenPopup({
 		bgColor: "#A6DCEE"
 	});
 
@@ -158,7 +158,7 @@ $(function() {
 	// create popup gallery for tabs
 
 	$('.stores-location-tab-carousel').fancybox({
-		selector : '.owl-item:not(.cloned) a',
+		selector : '.stores-location-tab-carousel .owl-item:not(.cloned) a',
 		backFocus : false,
 		hash   : false,
 		thumbs : {
@@ -234,10 +234,10 @@ $(function() {
 	
 	$('.authors__tab').on('click', function(){
 		var authorTabIndex = $(this).index();
-		$('.authors__tab').removeClass('active');
+		$('.authors__tab').removeClass('active'); 
 		$(this).addClass('active');
-		$('.author-card').removeClass('active');
-		$('.author-card').eq(authorTabIndex).addClass('active');
+		$('.authors-box').removeClass('active');
+		$('.authors-box').eq(authorTabIndex).addClass('active');
 		return false;
 	});	
 
