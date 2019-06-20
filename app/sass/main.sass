@@ -228,6 +228,8 @@
 	padding: 8px 10px 7px
 	border-radius: 10em
 	grid-template-columns: max-content 1fr 
+	&_pa
+		grid-column: span 2
 	&__btn
 		background-color: #fff
 		border: none
@@ -243,6 +245,80 @@
 		color: $blue
 		&::-webkit-input-placeholder
 			color: $blue
+
+.pa-actions-box
+	grid-column: span 2
+	grid-template-columns: max-content max-content
+	justify-content: space-between
+	&__cart
+		color: $blue
+		font-size: em(26px)
+		align-self: center
+
+.pa-mini-menu-box
+	position: relative
+
+.pa-mini-menu
+	padding: 10px 20px
+	border-radius: 4px
+	cursor: pointer
+	transition: box-shadow 0.25s ease
+	position: relative
+	background-color: #fff
+	width: 215px
+
+	&:hover
+		//box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+	&.active
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+		position: absolute
+		top: -11px
+		left: 0
+		.pa-mini-menu
+			&__list
+				display: block
+			&__arrow
+				transform: rotate(180deg)
+	&__header
+		grid-template-columns: max-content 1fr max-content
+		align-items: center
+		//height: 162px
+	&__arrow
+		font-size: em(6px)
+		margin-left: 15px
+		//transition: transform 0.4s linear
+	&__img-box
+		width: 40px
+		height: 40px
+		border-radius: 40px
+		overflow: hidden
+		margin-right: 18px
+	&__img
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__name
+		font-size: em(14px)
+		font-weight: 900
+		margin: 0
+	&__list
+		//position: absolute
+		//bottom: 0
+		//transform: translateY(100%)
+		margin: 10px 0 0 
+		//padding: 10px 20px
+		padding: 0
+		list-style-type: none
+		display: none
+		background-color: #fff
+	&__item
+		border-top: 1px solid $lBlue
+	&__url
+		display: block
+		padding: 8px 0
+		color: $blue
+		text-decoration: none
+		font-size: em(14px)
 
 .search-link, .enter-link 
 	text-decoration: none

@@ -21,98 +21,119 @@
 @function icon-char($filename)
     $char: ""
 
-    @if $filename == bold-arrow-down
+    @if $filename == arrow-mini-menu
         $char: "\E001"
     
-    @if $filename == bold-arrow-left
+    @if $filename == bold-arrow-down
         $char: "\E002"
     
-    @if $filename == bold-arrow-right
+    @if $filename == bold-arrow-left
         $char: "\E003"
     
-    @if $filename == bold-arrow-up
+    @if $filename == bold-arrow-right
         $char: "\E004"
     
-    @if $filename == book
+    @if $filename == bold-arrow-up
         $char: "\E005"
     
-    @if $filename == btn-arrow
+    @if $filename == book
         $char: "\E006"
     
-    @if $filename == camera
+    @if $filename == btn-arrow
         $char: "\E007"
     
-    @if $filename == carousel-arrow-left
+    @if $filename == camera
         $char: "\E008"
     
-    @if $filename == carousel-arrow-right
+    @if $filename == carousel-arrow-left
         $char: "\E009"
     
-    @if $filename == clapperboard
+    @if $filename == carousel-arrow-right
         $char: "\E00A"
     
-    @if $filename == clock
+    @if $filename == cart
         $char: "\E00B"
     
-    @if $filename == close
+    @if $filename == clapperboard
         $char: "\E00C"
     
-    @if $filename == cross
+    @if $filename == clock
         $char: "\E00D"
     
-    @if $filename == doc
+    @if $filename == close
         $char: "\E00E"
     
-    @if $filename == enter
+    @if $filename == cross
         $char: "\E00F"
     
-    @if $filename == filter
+    @if $filename == doc
         $char: "\E010"
     
-    @if $filename == form-calendar
+    @if $filename == enter
         $char: "\E011"
     
-    @if $filename == form-email
+    @if $filename == events
         $char: "\E012"
     
-    @if $filename == form-name
+    @if $filename == filter
         $char: "\E013"
     
-    @if $filename == form-phone
+    @if $filename == form-calendar
         $char: "\E014"
     
-    @if $filename == jpg
+    @if $filename == form-email
         $char: "\E015"
     
-    @if $filename == location-linear
+    @if $filename == form-name
         $char: "\E016"
     
-    @if $filename == location
+    @if $filename == form-phone
         $char: "\E017"
     
-    @if $filename == man
+    @if $filename == history
         $char: "\E018"
     
-    @if $filename == pdf
+    @if $filename == jpg
         $char: "\E019"
     
-    @if $filename == play-big
+    @if $filename == location-linear
         $char: "\E01A"
     
-    @if $filename == play-smal
+    @if $filename == location
         $char: "\E01B"
     
-    @if $filename == png
+    @if $filename == man-white
         $char: "\E01C"
     
-    @if $filename == search
+    @if $filename == man
         $char: "\E01D"
     
-    @if $filename == star
+    @if $filename == pdf
         $char: "\E01E"
     
-    @if $filename == xls
+    @if $filename == play-big
         $char: "\E01F"
+    
+    @if $filename == play-smal
+        $char: "\E020"
+    
+    @if $filename == png
+        $char: "\E021"
+    
+    @if $filename == search
+        $char: "\E022"
+    
+    @if $filename == settings
+        $char: "\E023"
+    
+    @if $filename == staff
+        $char: "\E024"
+    
+    @if $filename == star
+        $char: "\E025"
+    
+    @if $filename == xls
+        $char: "\E026"
     
     @return $char
 
@@ -126,6 +147,8 @@
         
         content: icon-char($filename)
 
+.icon-arrow-mini-menu
+    +icon(arrow-mini-menu)
 .icon-bold-arrow-down
     +icon(bold-arrow-down)
 .icon-bold-arrow-left
@@ -144,6 +167,8 @@
     +icon(carousel-arrow-left)
 .icon-carousel-arrow-right
     +icon(carousel-arrow-right)
+.icon-cart
+    +icon(cart)
 .icon-clapperboard
     +icon(clapperboard)
 .icon-clock
@@ -156,6 +181,8 @@
     +icon(doc)
 .icon-enter
     +icon(enter)
+.icon-events
+    +icon(events)
 .icon-filter
     +icon(filter)
 .icon-form-calendar
@@ -166,12 +193,16 @@
     +icon(form-name)
 .icon-form-phone
     +icon(form-phone)
+.icon-history
+    +icon(history)
 .icon-jpg
     +icon(jpg)
 .icon-location-linear
     +icon(location-linear)
 .icon-location
     +icon(location)
+.icon-man-white
+    +icon(man-white)
 .icon-man
     +icon(man)
 .icon-pdf
@@ -184,6 +215,10 @@
     +icon(png)
 .icon-search
     +icon(search)
+.icon-settings
+    +icon(settings)
+.icon-staff
+    +icon(staff)
 .icon-star
     +icon(star)
 .icon-xls

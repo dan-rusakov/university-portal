@@ -280,5 +280,22 @@ $(function() {
 			return false;
 		};
 	});
+
+	// open close pa-mini-menu
+
+	var menuListIdx = 0;
+	$('.pa-mini-menu').on('click', function(){
+		if(menuListIdx == 0){
+			console.log(menuListIdx);
+			$('.pa-mini-menu__list').slideToggle();
+			$(this).toggleClass('active');
+			menuListIdx = 1;
+		} else {
+			console.log(menuListIdx);
+			$('.pa-mini-menu__list').slideToggle()
+			$(this).delay(400).queue(function () {$(this).toggleClass('active');$(this).dequeue();});
+			menuListIdx = 0;
+		}
+	});
 	
 });
