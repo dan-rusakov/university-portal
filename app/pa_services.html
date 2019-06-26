@@ -20,7 +20,7 @@
 <body>
 
 	<header class="header">
-		<div class="menu-top-line">
+		<!--<div class="menu-top-line">
 			<div class="container grid">
 				<a href="/" class="logo grid">
 					<img src="img/logo-red.svg" alt="Университет родителей" class="logo__img">
@@ -37,6 +37,41 @@
 					<input type="text" class="search-line__input" placeholder="Поиск">
 				</form>
 				<a href="#" class="red-btn menu-top-line__btn" id="enter-btn">Войти</a>
+			</div>
+		</div>-->
+		<div class="menu-top-line">
+			<div class="container grid">
+				<a href="/" class="logo grid">
+					<img src="img/logo-red.svg" alt="Университет родителей" class="logo__img">
+					<p class="logo__text">Академия родителей</p>
+				</a>
+				<ul class="main-menu">
+					<li class="main-menu__text"><a class="main-menu__url" href="#">О центре</a></li>
+					<li class="main-menu__text"><a class="main-menu__url" href="#">Обзоры</a></li>
+					<li class="main-menu__text"><a class="main-menu__url" href="#">Отзывы</a></li>
+					<li class="main-menu__text"><a class="main-menu__url" href="#">Контакты</a></li>
+				</ul>
+				<form class="search-line grid search-line_pa">
+					<button type="submit" class="search-line__btn"><i class="icon-search"></i></button>
+					<input type="text" class="search-line__input" placeholder="Поиск">
+				</form>
+				<div class="pa-actions-box grid">
+					<div class="pa-mini-menu-box">
+						<div class="pa-mini-menu">
+							<div class="pa-mini-menu__header grid">
+								<div class="pa-mini-menu__img-box"><img src="img/__note-img.jpg" alt="" class="pa-mini-menu__img"></div>
+								<p class="pa-mini-menu__name">Анна Иванова</p>
+								<i class="pa-mini-menu__arrow icon-arrow-mini-menu"></i>
+							</div>
+							<ul class="pa-mini-menu__list">
+								<li class="pa-mini-menu__item"><a href="#" class="pa-mini-menu__url">Личный кабинет</a></li>
+								<li class="pa-mini-menu__item"><a href="#" class="pa-mini-menu__url">Настройки</a></li>
+								<li class="pa-mini-menu__item"><a href="#" class="pa-mini-menu__url">Выход</a></li>
+							</ul>
+						</div> 
+					</div>
+					<i class="icon-cart pa-actions-box__cart"></i>
+				</div>
 			</div>
 		</div>
 		<div class="menu-bottom-line">
@@ -92,7 +127,7 @@
 			<a href="#" class="menu-box-mobile__close-icon"><img src="img/icon-arrow-menu.svg" alt="закрыть"></a>
 		</div>
 	</header>
-    <section class="services-page">
+    <section class="pa-services">
         <div class="container grid">
             <div class="left-menu">
                  <div class="left-menu__header grid">
@@ -100,76 +135,81 @@
                      <p class="left-menu__header-name left-menu__header-name_black">Анна Иванова </p>
                      <p class="left-menu__header-text">Личный кабинет</p>
                  </div>
-                 <ul class="left-menu__content grid">
-                <li class="left-menu__left-item"><i class="icon-cart left-menu__icon"></i></li> <li class="left-menu__right-item grid"> <a href="" class="left-menu__url">Корзина</a> <p class="left-menu__notice">1</p></li>
-                <li class="left-menu__left-item"><i class="icon-form-calendar left-menu__icon"></i> </li><li class="left-menu__right-item grid"> <a href="" class="left-menu__url">Мои меропрития</a> <p class="left-menu__notice">1</p></li></li>
-                <li class="left-menu__left-item"><i class="icon-staff left-menu__icon"></i></li><li class="left-menu__right-item grid"> <a href="" class="left-menu__url">Доступные матриалы</a> <p class="left-menu__notice">1</p></li></li>
-                <li class="left-menu__left-item"><i class="icon-history left-menu__icon"></i></li><li class="left-menu__right-item grid">  <a href="" class="left-menu__url">История заказов</a> <p class="left-menu__notice">1</p></li></li>
-                <li class="left-menu__left-item"><i class="icon-man-white left-menu__icon"></i> </li><li class="left-menu__right-item grid"> <a href="" class="left-menu__url">Консультации</a> <p class="left-menu__notice">1</p></li></li>
-                <li class="left-menu__left-item"><i class="icon-settings left-menu__icon"></i> </li><li class="left-menu__right-item grid"> <a href="" class="left-menu__url">Настройки</a> <p class="left-menu__notice">1</p></li></li>    
-                </ul>           
+                 <div class="left-menu__content grid">
+                	<a href="#" class="left-menu__line grid">
+						<div class="left-menu__left-item grid">
+							<i class="icon-cart left-menu__icon"></i>
+						</div>
+						<div class="left-menu__right-item grid">
+							<p class="left-menu__name">Корзина</p>
+							<p class="left-menu__notice">1</p>
+						</div>
+					</a>
+					<a href="#" class="left-menu__line grid">
+						<div class="left-menu__left-item grid">
+							<i class="icon-form-calendar left-menu__icon"></i>
+						</div>
+						<div class="left-menu__right-item grid">
+							<p class="left-menu__name">Мои меропрития</p>
+							<p class="left-menu__notice">1</p>
+						</div>
+					</a>  
+					<a href="#" class="left-menu__line grid">
+						<div class="left-menu__left-item grid">
+							<i class="icon-staff left-menu__icon"></i>
+						</div>
+						<div class="left-menu__right-item grid">
+							<p class="left-menu__name">Доступные матриалы</p>
+							<p class="left-menu__notice">1</p>
+						</div>
+					</a>
+					<a href="#" class="left-menu__line grid">
+						<div class="left-menu__left-item grid">
+							<i class="icon-history left-menu__icon"></i>
+						</div>
+						<div class="left-menu__right-item grid">
+							<p class="left-menu__name">История заказов</p>
+							<p class="left-menu__notice">1</p>
+						</div>
+					</a>
+					<a href="#" class="left-menu__line grid">
+						<div class="left-menu__left-item grid">
+							<i class="icon-man-white left-menu__icon"></i>
+						</div>
+						<div class="left-menu__right-item grid">
+							<p class="left-menu__name">Консультации</p>
+							<p class="left-menu__notice">1</p>
+						</div>
+					</a>
+					<a href="#" class="left-menu__line grid">
+						<div class="left-menu__left-item grid">
+							<i class="icon-settings left-menu__icon"></i>
+						</div>
+						<div class="left-menu__right-item grid">
+							<p class="left-menu__name">Настройки</p>
+							<p class="left-menu__notice">1</p>
+						</div>
+					</a>
+                </div>           
 			</div>
-			<div class="page-cart__left-content-box">
-				<h1 class="pa-section-title">Корзина</h1>
+			<div class="pa-services__left-content-box">
+				<h1 class="pa-section-title">Ваши мероприятия</h1>
 				<div class="pa-content-box">
-					<h3 class="pa-content-box__title">Ваш заказ</h3>
-					<div class="preview-card-line grid page-cart__preview-card-line">
-						<div class="preview-card-line__img preview-card-line__img_ent">
+					<div class="preview-card-line grid">
+						<div class="preview-card-line__img ">
 							<img src="img/__preview-card-line-img1.jpg" alt="">
 						</div>
-						<p class="preview-card-line__title preview-card-line__title_ent">Консультация психолога, Анна Иванова</p>
-						<div class="preview-card-line__rating rating-box">
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star"></i>
-						</div>
-						<p class="preview-card-line__text page-cart_box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+						<p class="preview-card-line__title">Консультация психолога, Анна Иванова</p>
+						<p class="preview-card-line__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 						<div class="preview-card-line__action-box">
-							<p class="preview-card-line__price preview-card-line__price_center">12 000 Р</p>
+							<ul class="preview-card-line__info-list grid">
+								<li class="preview-card-line__info-item"><i class="icon-form-calendar preview-card-line__info-icon"></i></li>
+								<li class="preview-card-line__info-item">27 февраля 2019</li>
+								<li class="preview-card-line__info-item"><i class="icon-clock preview-card-line__info-icon"></i></li>
+								<li class="preview-card-line__info-item">в 12:30</li>
+							</ul>
+							<a href="#" class="main-btn preview-card-line__mini-btn">Перейти</a>
 						</div>
-						<a href="" class="preview-card-line__remove"><i class="icon-cross preview-card-line__remove-icon"></i></a>
-					</div>
-					<div class="preview-card-line grid page-cart__preview-card-line">
-						<div class="preview-card-line__img preview-card-line__img_ent">
-							<img src="img/__preview-card-line-img1.jpg" alt="">
-						</div>
-						<p class="preview-card-line__title preview-card-line__title_ent">Консультация психолога, Анна Иванова</p>
-						<div class="preview-card-line__rating rating-box">
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star"></i>
-						</div>
-						<p class="preview-card-line__text page-cart_box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-						<div class="preview-card-line__action-box">
-							<p class="preview-card-line__price  preview-card-line__price_center">12 000 Р</p>
-						</div>
-						<a href="" class="preview-card-line__remove"><i class="icon-cross preview-card-line__remove-icon"></i></a>
-					</div>
-					<div class="preview-card-line grid page-cart__preview-card-line">
-						<div class="preview-card-line__img preview-card-line__img_ent">
-							<img src="img/__preview-card-line-img1.jpg" alt="">
-						</div>
-						<p class="preview-card-line__title preview-card-line__title_ent">Консультация психолога, Анна Иванова</p>
-						<div class="preview-card-line__rating rating-box">
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star active"></i>
-							<i class="icon-star rating-box__star"></i>
-						</div>
-						<p class="preview-card-line__text page-cart_box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-						<div class="preview-card-line__action-box">
-							<p class="preview-card-line__price  preview-card-line__price_center">12 000 Р</p>
-						</div>
-						<a href="" class="preview-card-line__remove"><i class="icon-cross preview-card-line__remove-icon"></i></a>
-					</div>
-					<div class="pa-content-box__footer grid">
-						<p class="pa-content-box__footer-price">Сумма заказа: 41 790 Р</p>
-						<a href="#" class="main-btn">Оплатить</a>
 					</div>
 				</div> 
 				<h3 class="pa-section-title">Недавно Вы смотрели:</h3>
