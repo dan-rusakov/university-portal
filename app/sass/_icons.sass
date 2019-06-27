@@ -102,38 +102,50 @@
     @if $filename == location
         $char: "\E01B"
     
-    @if $filename == man-white
+    @if $filename == lock-ok
         $char: "\E01C"
     
-    @if $filename == man
+    @if $filename == man-white
         $char: "\E01D"
     
-    @if $filename == pdf
+    @if $filename == man
         $char: "\E01E"
     
-    @if $filename == play-big
+    @if $filename == pdf
         $char: "\E01F"
     
-    @if $filename == play-smal
+    @if $filename == play-big
         $char: "\E020"
     
-    @if $filename == png
+    @if $filename == play-smal
         $char: "\E021"
     
-    @if $filename == search
+    @if $filename == png
         $char: "\E022"
     
-    @if $filename == settings
+    @if $filename == round-dollar
         $char: "\E023"
     
-    @if $filename == staff
+    @if $filename == search
         $char: "\E024"
     
-    @if $filename == star
+    @if $filename == settings
         $char: "\E025"
     
-    @if $filename == xls
+    @if $filename == shield-cancel
         $char: "\E026"
+    
+    @if $filename == shield-ok
+        $char: "\E027"
+    
+    @if $filename == staff
+        $char: "\E028"
+    
+    @if $filename == star
+        $char: "\E029"
+    
+    @if $filename == xls
+        $char: "\E02A"
     
     @return $char
 
@@ -201,6 +213,8 @@
     +icon(location-linear)
 .icon-location
     +icon(location)
+.icon-lock-ok
+    +icon(lock-ok)
 .icon-man-white
     +icon(man-white)
 .icon-man
@@ -213,10 +227,16 @@
     +icon(play-smal)
 .icon-png
     +icon(png)
+.icon-round-dollar
+    +icon(round-dollar)
 .icon-search
     +icon(search)
 .icon-settings
     +icon(settings)
+.icon-shield-cancel
+    +icon(shield-cancel)
+.icon-shield-ok
+    +icon(shield-ok)
 .icon-staff
     +icon(staff)
 .icon-star
