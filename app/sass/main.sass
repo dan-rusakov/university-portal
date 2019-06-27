@@ -2334,8 +2334,33 @@
 	&__date
 		font-size: em(18px)
 		margin: 0 
+	&__review-box
+		grid-row: 1/3
+		grid-column: 3/4
+		padding-right: 40px
+	&__review-btn
+		background-color: transparent
+		border: 1px solid $red
+		border-radius: 30em
+		font-size: em(14px)
+		color: $red
+		padding: em(16px) em(35px)
+		text-decoration: none
+		display: inline-block
+		position: relative
+		cursor: pointer
+		&:hover
+			background-color: $red
+			color: #fff
+		
 	
 /* pa history page END */
+/* pa consultations page START */
+
+.pa-specialists-inner
+	grid-row-gap: 30px
+
+/* pa consultations page END */
 
 	
 @import "media" // Всегда в конце
