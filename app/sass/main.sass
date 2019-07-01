@@ -2361,6 +2361,151 @@
 	grid-row-gap: 30px
 
 /* pa consultations page END */
+/* pa settings page START */
+
+.settings-form
+	grid-template-columns: 3fr 2fr
+	grid-gap: 40px 80px
+	&__title
+		font-size: em(24px)
+		font-weight: 900
+		margin: 0 
+		&_wide
+			grid-column: 1/3
+	&__input
+		border: none
+		border-radius: 20em 
+		color: $blue
+		border: 1px solid $blue
+		font-size: em(18px)
+		padding: em(16px) em(10px) em(16px) em(43px)
+		position: relative
+		width: 100%
+		&::placeholder
+			color: $blue
+	&__input-password
+		border: none
+		border-radius: 20em 
+		color: $blue
+		border: 1px solid $blue
+		font-size: em(18px)
+		padding: em(16px) em(10px) em(16px) em(20px)
+		position: relative
+		width: 100%
+		&::placeholder
+			color: $blue
+	&__input-box
+		display: block
+		position: relative
+		i 
+			position: absolute
+			left: em(20px)
+			font-size: em(18px)
+			color: $blue
+			z-index: 1
+			top: 52%
+			transform: translateY(-50%)
+	&__input-box-password
+		display: block
+		position: relative
+		i 
+			position: absolute
+			right: em(20px)
+			font-size: em(18px)
+			color: $blue
+			z-index: 1
+			top: 55%
+			transform: translateY(-50%)
+	&__2-col-box
+		grid-template-columns: 1fr 1fr 
+		grid-gap: 20px
+		grid-auto-rows: max-content
+	&__input-desc
+		color: #999999
+		font-size: em(14px)
+		line-height: 1.2
+		grid-column: 2/3
+		margin: 0
+	&__policy
+		font-size: em(14px)
+		margin: 0
+		align-self: center
+	&__checkbox
+		display: none
+		&:checked + .settings-form__checkbox-label::before
+			content: '\E00C'
+	&__checkbox-label
+		font-size: em(18px)
+		grid-template-columns: 30px 1fr
+		&::before
+			content: ''
+			font-family: Icons
+			width: 18px
+			height: 18px
+			border: 1px solid $blue
+			border-radius: 4px
+			display: inline-block
+			color: $blue
+			font-size: 10px
+			padding: 1px 0 0 3px
+			position: relative
+			top: 2px
+	&__checkbox-text
+		margin: 0
+		max-width: 250px
+	&__mailing-box
+		grid-row-gap: 20px
+		grid-auto-rows: max-content
+	&__photo-box
+		grid-gap: 20px
+	&__photo-inner
+		grid-template-columns: auto 1fr
+		grid-gap: 15px
+		grid-auto-rows: auto
+	&__img-box
+		width: 134px
+		height: 134px
+		grid-row: 1/3
+	&__img
+		object-fit: cover
+		width: 100%
+		height: 100%
+	&__add-photo-btn
+		background-color: transparent
+		border: 1px solid $red
+		border-radius: 30em
+		font-size: em(18px)
+		color: $red
+		padding: em(14px) em(35px)
+		text-decoration: none
+		display: inline-block
+		position: relative
+		cursor: pointer
+		justify-self: start
+		&:hover
+			background-color: $red
+			color: #fff
+	&__remove-photo-btn
+		background-color: transparent
+		border: 1px solid #999
+		border-radius: 30em
+		font-size: em(18px)
+		color: #999
+		padding: em(16px) em(35px)
+		text-decoration: none
+		display: inline-block
+		position: relative
+		cursor: pointer
+		justify-self: start
+		line-height: 1.15
+		&:hover
+			background-color: #999
+			color: #fff
+	&__save-btn
+		padding: em(16px) em(30px)
+	
+
+/* pa settings page END */
 
 	
 @import "media" // Всегда в конце
