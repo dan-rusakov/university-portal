@@ -3,7 +3,7 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1600px)	
+@media only screen and (max-width : 1599px)	
 	.main-menu
 		&__text
 			margin-right: 30px
@@ -228,10 +228,36 @@
 			font-size: em(18px)
 		&__btn
 			font-size: em(18px)
+	.pa-actions-box
+		grid-column: 1 span
+	.menu-top-line_mobile>div
+		grid-template-columns: repeat(8, 1fr) max-content
 
+	.announce__text
+		font-size: em(16px)
+	.table
+		padding: 20px 15px 40px
+		&__url
+			font-size: em(14px)
+		&__box-header
+			margin-bottom: em(25px)
+	.left-menu
+		width: 280px
+		&__name
+			font-size: em(14px)
+		&__header-name
+			font-size: em(16px)
+		&__header-text
+			font-size: em(14px)
+		&__icon
+			font-size: em(20px)
+			top: 3px
+		&__header-img-box
+			width: 50px
+			height: 50px
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1199px)
 	.main-menu
 		&__text
 			margin-right: 15px
@@ -348,7 +374,7 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 991px)
 	.menu-top-line
 		&>div 
 			grid-template-columns: max-content 1fr max-content max-content
@@ -552,7 +578,7 @@
 		
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
 	.menu-top-line, .menu-bottom-line
 		display: none
 	.logo__text
@@ -838,7 +864,7 @@
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
+@media only screen and (max-width : 479px)
 	.page-banner
 		&__adress 
 			font-size: em(18px)
@@ -1101,7 +1127,7 @@
 
 
 /* Custom, iPhone Retina */ 
-@media only screen and (max-width : 375px)
+@media only screen and (max-width : 374px)
 	.main-btn, .sec-btn, .more-btn
 		font-size: em(14px)
 	.page-banner__title

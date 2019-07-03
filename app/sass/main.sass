@@ -248,6 +248,7 @@
 		font-size: em(18px)
 		outline: none
 		color: $blue
+		width: 100%
 		&::-webkit-input-placeholder
 			color: $blue
 
@@ -259,9 +260,11 @@
 		color: $blue
 		font-size: em(26px)
 		align-self: center
+		margin-left: 15px
 
 .pa-mini-menu-box
 	position: relative
+	width: 215px
 
 .pa-mini-menu
 	padding: 10px 20px
@@ -2017,8 +2020,8 @@
 /* subscribe popup END */
 /* left-menu START */
 .left-menu
-	width: em(305px) 
-	box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5)
+	width: 305px
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 	border-radius: 5px
 	grid-row: 1/3
 	background-color: #fff
@@ -2029,12 +2032,19 @@
 		grid-template-row: repeat(4,max-content) 
 		padding: em(15px) em(20px)
 		border-radius: rem(5px)
-	&__header-img
-		max-width: em(60px)
-		max-height: em(60px)
-		margin-right: em(20px)
+	&__header-img-box
+		width: 60px
+		height: 60px
 		grid-row: 1/3
 		grid-column: 1/2
+		margin-right: 20px
+		border-radius: 100px
+		overflow: hidden
+	&__header-img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		
 	&__header-text
 		text-decoration: none
 		color: $blue
@@ -2052,7 +2062,7 @@
 		border-bottom-left-radius: 5px   
 		padding: 0
 	&__line
-		grid-template-columns: max-content 1fr 
+		grid-template-columns: 58px 1fr 
 		text-decoration: none
 		&:last-child .left-menu__right-item 
 			border: 0
@@ -2072,6 +2082,7 @@
 	&__icon
 		color: $blue 
 		font-size: em(24px)
+		position: relative
 	&__name
 		text-decoration: none
 		color: $blue
@@ -2166,50 +2177,51 @@
 // recently
 // page area START
 .page-area
-	padding: em(30px) 0 em(100px)
+	padding: 30px 0 100px
 	&>div
 		grid-template-columns:  max-content 1fr
-		grid-template-rows: repeat(2,max-content)
-		grid-column-gap: em(20px)
+		grid-column-gap: 20px
 
 // announce START
 
 
 .announce
 	padding: em(30px) em(35px)  
-	box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5)
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 	border-radius: 5px
 	&-box
 		margin-bottom: 20px
 	&__text
-		margin: 0
+		margin: 0 0 em(15px)
 		color: $dark
 		font-size: 18px
-		line-height: em(31px)
+		line-height: 1.25
+		&:last-child
+			margin: 0
 		&_bold
-			line-height: em(36px)
 			font-weight: 900
 // announce END
 // table START
 .table 
 	margin: 0
-	padding: em(30px) em(20px)  em(50px) em(20px)
-	box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5)
+	padding: 30px 10px 50px
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 	border-radius: 5px
 	grid-template-columns: repeat(5,1fr) 
 	&__box
-		&:nth-child(n+2)
-			border-left: 1px solid $lBlue
+		border-left: 1px solid $lBlue
+		padding: 0 15px
+		&:nth-child(1), &:nth-child(4)
+			border: none
 	&__header
 		list-style: none
 		font-weight: 900 
-		padding-left: em(20px)
 	&__box-header 
 		margin-bottom: em(50px)
 	&__item
 		list-style: none
-		line-height: em(30px)
-		padding-left: em(20px)
+		line-height: 1.15
+		margin-bottom: 7px
 	&__url
 		text-decoration: none
 		color: $blue
