@@ -265,6 +265,7 @@
 .pa-mini-menu-box
 	position: relative
 	width: 215px
+	height: 60px
 
 .pa-mini-menu
 	padding: 10px 20px
@@ -280,7 +281,7 @@
 	&.active
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 		position: absolute
-		top: -11px
+		top: 0
 		left: 0
 		.pa-mini-menu
 			&__list
@@ -2186,7 +2187,7 @@
 
 
 .announce
-	padding: em(30px) em(35px)  
+	padding: 30px 35px
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 	border-radius: 5px
 	&-box
@@ -2207,7 +2208,8 @@
 	padding: 30px 10px 50px
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 	border-radius: 5px
-	grid-template-columns: repeat(5,1fr) 
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) 
+	grid-row-gap: 30px
 	&__box
 		border-left: 1px solid $lBlue
 		padding: 0 15px
