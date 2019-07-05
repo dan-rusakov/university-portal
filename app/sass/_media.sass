@@ -277,6 +277,8 @@
 			margin-right: 20px
 		&__remove-icon
 			font-size: em(16px)
+	.pa-line-card__date-text
+		font-size: em(16px)
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
@@ -410,6 +412,18 @@
 		padding-left: 20px
 		font-size: em(34px)
 		margin: em(10px) 0
+	.pa-line-card
+		grid-column-gap: 20px
+		&__title
+			font-size: em(14px)
+		&__text
+			font-size: em(12px)
+		&__btn
+			margin-right: 20px
+		&__date
+			margin-right: 20px
+		&__date-text
+			font-size: em(14px)
 		
 
 
@@ -712,7 +726,27 @@
 			margin: 0
 		&__specialist-profession
 			font-size: em(12px)
-
+	.pa-line-card
+		grid-template-columns: 1fr
+		padding: 14px 16px
+		&__img-box
+			display: none
+		&__text
+			display: none
+		&__text-box
+			padding: 0 0 14px
+			margin-bottom: 14px
+			border-bottom: 1px solid $lBlue
+		&__title
+			margin: 0
+		&__action-box
+			display: grid 
+			grid-template-columns: 1fr max-content
+			align-items: center
+		&__date
+		&__btn
+			margin: 0
+			justify-self: end
 	
 		
 
@@ -1018,6 +1052,12 @@
 			padding: em(13px) em(28px)
 		&__footer-price
 			font-size: em(14px)
+	.pa-line-card
+		&__btn
+			font-size: em(14px)
+	.pa-services
+		&>div
+			grid-template-columns: 1fr 
 
 
 /* Extra Small Devices, Phones */
@@ -1296,6 +1336,11 @@
 		margin-top: 0
 	.pa-cart-card
 		margin-bottom: 15px
+	.pa-services
+		padding: 30px 0 70px
+		&>div
+			padding: 0 
+
 
 
 /* Custom, iPhone Retina */ 

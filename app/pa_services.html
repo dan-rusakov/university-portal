@@ -195,89 +195,55 @@
 			<div class="pa-services__left-content-box">
 				<h1 class="pa-section-title">Ваши мероприятия</h1>
 				<div class="pa-content-box">
-					<div class="preview-card-line grid">
-						<div class="preview-card-line__img ">
-							<img src="img/__preview-card-line-img1.jpg" alt="">
+					<div class="pa-line-card grid">
+						<div class="pa-line-card__img-box">
+							<img class="pa-line-card__img" src="img/__preview-card-line-img1.jpg" alt="">
 						</div>
-						<p class="preview-card-line__title">Консультация психолога, Анна Иванова</p>
-						<p class="preview-card-line__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-						<div class="preview-card-line__action-box">
-							<ul class="preview-card-line__info-list grid">
-								<li class="preview-card-line__info-item"><i class="icon-form-calendar preview-card-line__info-icon"></i></li>
-								<li class="preview-card-line__info-item">27 февраля 2019</li>
-								<li class="preview-card-line__info-item"><i class="icon-clock preview-card-line__info-icon"></i></li>
-								<li class="preview-card-line__info-item">в 12:30</li>
-							</ul>
-							<a href="#" class="main-btn preview-card-line__mini-btn">Перейти</a>
+						<div class="pa-line-card__text-box">
+							<p class="pa-line-card__title">Консультация психолога, Анна Иванова</p>
+							<p class="pa-line-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+						</div>
+						<div class="pa-line-card__action-box">
+							<div class="pa-line-card__description-box">
+								<div class="pa-line-card__date">
+									<i class="pa-line-card__date-icon icon-form-calendar"></i>
+									<p class="pa-line-card__date-text">27 февраля 2019</p>
+								</div>
+								<div class="pa-line-card__date">
+									<i class="pa-line-card__date-icon icon-clock"></i>
+									<p class="pa-line-card__date-text">в 12:30</p>
+								</div>
+							</div>
+							<a href="#" class="main-btn pa-line-card__btn">Оплатить</a>
 						</div>
 					</div>
 				</div> 
 				<h3 class="pa-section-title">Недавно Вы смотрели:</h3>
 				<div class="recently grid">
-					<div class="rows grid">
-						<div class="service-card">
-							<div class="service-card__img" style="background-image: url(img/preview-card-grid-img1.jpg)"></div>
-							<div class="service-card__content grid">
-								<p class="service-card__topic">#Встреча</p>
-								<p class="service-card__title">Какая-то важная встреча"</p>
-								<div class="service-card__info grid">
-									<i class="service-card__info-icon icon-form-calendar"></i>
-									<p class="service-card__info-text">27 фавраля 2019</p>
-								</div>
-								<div class="service-card__info grid">
-									<i class="service-card__info-icon icon-location"></i>
-									<p class="service-card__info-text">Екатеринбург, ул. Белинского, 228</p>
-								</div>
-									<div class="service-card__price-box grid">
-									<p class="service-card__price">1000 Р</p>
-									<a href="kafedra-roditelej/avtorskij-trening-skoro-v-shkolu" class="service-card__btn">Купить</a>
-								</div>
-							</div>
-						</div>
-						<div class="service-card">
-							<div class="service-card__img" style="background-image: url(img/__course-full-card-img.jpg)"></div>
-							<div class="service-card__content grid">
-								<p class="service-card__topic">#Встреча</p>
-								<p class="service-card__title">Встреча «Развитие ребёнка от 3 года до 6 лет»</p>	
-								<div class="service-card__info grid">
-									<i class="service-card__info-icon icon-form-calendar"></i>
-									<p class="service-card__info-text">14 апреля 2019</p>
-								</div>
-								<div class="service-card__info grid">
-									<i class="service-card__info-icon icon-location"></i>
-									<p class="service-card__info-text">Екатеринбург, ул. Щорса</p>
+						<div class="rows grid">
+							<div class="pa-service-card grid">
+								<div class="pa-service-card__img" style="background-image: url(img/preview-card-grid-img1.jpg)"></div>
+								<div class="pa-service-card__content">
+									<p class="pa-service-card__topic">#Встреча</p>
+									<p class="pa-service-card__title">Какая-то важная встреча</p>
+									<p class="pa-service-card__mobile-price">1000 Р</p>
+									<div class="pa-service-card__text-box">
+										<div class="pa-service-card__info grid">
+											<i class="pa-service-card__info-icon icon-form-calendar"></i>
+											<p class="pa-service-card__info-text">27 фавраля 2019</p>
+										</div>
+										<div class="pa-service-card__info grid">
+											<i class="pa-service-card__info-icon icon-location"></i>
+											<p class="pa-service-card__info-text">Екатеринбург, ул. Белинского, 228</p>
+										</div>
 									</div>
-									<div class="service-card__price-box grid">
-									<p class="service-card__price">1990 Р</p>
-									<a href="kafedra-roditelej/vstrecha-«razvitie-rebyonka-ot-3-goda-do-6-let»" class="service-card__btn">Купить</a>
+									<div class="pa-service-card__price-box grid">
+										<p class="pa-service-card__price">1000 Р</p>
+										<a href="kafedra-roditelej/avtorskij-trening-skoro-v-shkolu" class="pa-service-card__btn">Купить</a>
+									</div>
 								</div>
-							</div>
+							</div>	
 						</div>
-						<div class="service-card">
-							<div class="service-card__img" style="background-image: url(img/preview-card-grid-img1.jpg)"></div>
-							<div class="service-card__content grid">
-								<p class="service-card__topic">#Обучение</p>
-								<p class="service-card__title">Обучение «Развитие ребёнка от 1 года до 3 лет»</p>
-								<p class="service-card__description">Lorem ipsum adipisicing elit, sed do eiusmod tempor incid idunt...</p>
-								<div class="service-card__price-box grid">
-									<p class="service-card__price">28000 Р</p>
-									<a href="kafedra-roditelej/obuchenie-«razvitie-rebyonka-ot-1-goda-do-3-let»" class="service-card__btn">Купить</a>
-								</div>
-							</div>
-						</div>
-						<div class="service-card">
-							<div class="service-card__img" style="background-image: url(img/preview-card-grid-img1.jpg)"></div>
-							<div class="service-card__content grid">
-								<p class="service-card__topic">#Обучение</p>
-								<p class="service-card__title">Обучение «Развитие ребёнка от 3 года до 6 лет»</p>
-										<p class="service-card__description">Lorem ipsum adipisicing elit, sed do eiusmod tempor incid idunt...</p>
-										<div class="service-card__price-box grid">
-									<p class="service-card__price">28000 Р</p>
-									<a href="kafedra-roditelej/obuchenie-«razvitie-rebyonka-ot-3-goda-do-6-let»" class="service-card__btn">Купить</a>
-								</div>
-							</div>
-						</div>		
-					</div>
 				</div>
 			</div>
 	</section>
