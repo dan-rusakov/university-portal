@@ -277,8 +277,18 @@
 			margin-right: 20px
 		&__remove-icon
 			font-size: em(16px)
-	.pa-line-card__date-text
-		font-size: em(16px)
+	.pa-line-card
+		&__date-text
+			font-size: em(16px)
+		&__specialist-img-box
+			margin-right: 10px
+		&__specialist-name
+			margin-bottom: 0
+		&__lined-btn
+			font-size: em(14px)
+	.pa-materials__no-materials-box
+		padding: 20px
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
@@ -404,6 +414,7 @@
 		padding: 20px
 		&__title
 			margin-bottom: 20px
+			font-size: em(20px)
 		&__footer-price
 			padding-right: 20px
 		&__btn
@@ -418,7 +429,9 @@
 			font-size: em(14px)
 		&__text
 			font-size: em(12px)
-		&__btn
+		&__lined-btn
+			margin-right: 20px
+		&__red-btn
 			margin-right: 20px
 		&__date
 			margin-right: 20px
@@ -675,7 +688,6 @@
 			grid-row-gap: 15px
 	.pa-service-card
 		grid-template-columns: 1fr
-		margin: 0 20px
 		&__img 
 			display: none
 		&__topic
@@ -744,10 +756,22 @@
 			grid-template-columns: 1fr max-content
 			align-items: center
 		&__date
-		&__btn
+		&__lined-btn
+			margin: 0
+			justify-self: start
+		&__red-btn
 			margin: 0
 			justify-self: end
-	
+		&__description-box_materials
+			display: none
+		&__watch-btn
+			display: inline-block
+	.pa-materials
+		&__materials-grid
+			grid-template-columns: 1fr
+	.pa-section-title
+		font-size: em(24px)
+		margin-top: 0
 		
 
 /* Small Devices, Tablets */
@@ -1053,11 +1077,21 @@
 		&__footer-price
 			font-size: em(14px)
 	.pa-line-card
-		&__btn
+		&__lined-btn
 			font-size: em(14px)
+		&__red-btn
+			font-size: em(14px)
+		&__watch-btn
+			font-size: em(13px)
 	.pa-services
 		&>div
 			grid-template-columns: 1fr 
+	.pa-materials
+		&>div
+			grid-template-columns: 1fr
+		&__btn
+			font-size: em(14px)
+		
 
 
 /* Extra Small Devices, Phones */
@@ -1331,15 +1365,29 @@
 			font-size: em(18px)
 		&__footer-price
 			justify-self: start
-	.pa-section-title
-		font-size: em(24px)
-		margin-top: 0
 	.pa-cart-card
 		margin-bottom: 15px
 	.pa-services
 		padding: 30px 0 70px
 		&>div
-			padding: 0 
+			padding: 0
+	.pa-materials
+		padding-bottom: 40px
+		&>div
+			padding: 0
+		&__no-materials-text
+			font-size: em(14px)
+		&__no-materials-box
+			border-radius: 0
+	.pa-line-card
+		&__specialist-name
+			font-size: em(14px)
+		&__watch-btn
+			padding: em(15px) em(30px)
+	.pa-service-card
+		margin: 0 20px
+		&_recomended
+			margin: 0
 
 
 
@@ -1379,6 +1427,13 @@
 			font-size: em(24px)
 		&__description
 			font-size: em(14px)
+	.pa-line-card
+		&__watch-btn
+			padding: em(11px) em(17px)
+		&__lined-btn
+			padding: em(10px) em(17px)
+	.pa-service-card__info-text
+		font-size: em(12px)
 	
 
 
