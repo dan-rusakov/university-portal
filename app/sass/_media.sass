@@ -304,6 +304,25 @@
 			margin-right: 20px
 		&__img-box
 			width: 120px
+	.settings-form
+		&__add-photo-btn
+			font-size: em(16px)
+			padding: em(16px) em(26px)
+			// line-height: 1.2
+		&__input
+			font-size: em(16px)
+		&__remove-photo-btn
+			font-size: em(16px)
+			padding: em(16px) em(26px)
+		&__input-password
+			font-size: em(16px)
+	.settings-form
+		grid-gap: 40px 60px
+		&__img-box
+			width: 110px
+			height: 110px
+		&__checkbox-text
+			font-size: em(14px) 
 
 
 /* Large Devices, Wide Screens */
@@ -459,6 +478,36 @@
 		grid-column-gap: 20px
 		&__title
 			margin-bottom: em(8px)
+	.settings-form
+		grid-gap: 30px
+		&__input
+			font-size: em(14px)
+		&__input-box i 
+			font-size: em(14px)
+		&__add-photo-btn
+			font-size: em(14px)
+			// padding: em(14px) em(26px)
+		&__remove-photo-btn
+			font-size: em(14px)
+		&__input-password
+			font-size: em(14px)
+		
+		&__img-box
+			width: 100px 
+			height: 100px
+		&__2-col-box
+			grid-gap: 10px
+		&__photo-inner
+			grid-gap: 10px
+		&__mailing-box
+			grid-row-gap: 10px
+		&__photo-box
+			grid-gap: 10px
+		&__input-desc
+			font-size: em(12px)
+			line-height: 1.1
+		&__title
+			font-size: em(21px)
 		
 		
 
@@ -846,6 +895,11 @@
 			grid-column: 1/3
 			grid-row: auto
 			justify-self: start
+	.settings-form
+		grid-template-columns: 1fr
+		&__input-box-password i
+			display: block
+			font-size: em(14px)
 		
 
 /* Small Devices, Tablets */
@@ -1168,6 +1222,9 @@
 	.pa-history
 		&>div
 			grid-template-columns: 1fr 
+	.pa-settings
+		&>div
+			grid-template-columns: 1fr 
 	.pa-specialist-card 
 		&__btn
 			width: auto
@@ -1475,6 +1532,10 @@
 		padding-bottom: 60px
 		&>div
 			padding: 0
+	.pa-settings
+		padding-bottom: 60px
+		&>div
+			padding: 0
 	.pa-thin-line
 		&_consultations
 			grid-column-gap: 15px
@@ -1492,6 +1553,25 @@
 			font-size: em(12px)
 	.pa-specialists-inner
 		grid-row-gap: 20px
+	.settings-form
+		&__2-col-box
+			grid-template-columns: 1fr
+		&__title_wide
+			grid-column: 1/2
+		&__input-desc
+			grid-column: 1/2
+		&__photo-box
+			order: 1
+		&__mailing-box
+			order: 2
+		&__box
+			order: 3
+		&__save-btn
+			font-size: em(16px)
+		&__policy-box
+			order: 4
+		&__policy
+			line-height: 1.1
 	
 
 

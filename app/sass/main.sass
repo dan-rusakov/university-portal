@@ -2631,8 +2631,18 @@
 /* pa consultations page END */
 /* pa settings page START */
 
+.pa-settings
+	background-image: url(../img/geometry-pattern.png)
+	background-size: 412px 412px
+	background-position: 0 0
+	background-repeat: repeat
+	padding: rem(30px) 0 rem(100px)
+	&>div
+		grid-template-columns:  max-content 1fr
+		grid-column-gap: rem(20px)
+
 .settings-form
-	grid-template-columns: 3fr 2fr
+	grid-template-columns: 1fr max-content
 	grid-gap: 40px 80px
 	&__title
 		font-size: em(24px)
@@ -2729,7 +2739,7 @@
 	&__photo-inner
 		grid-template-columns: auto 1fr
 		grid-gap: 15px
-		grid-auto-rows: auto
+		grid-auto-rows: max-content
 	&__img-box
 		width: 134px
 		height: 134px
@@ -2750,6 +2760,7 @@
 		position: relative
 		cursor: pointer
 		justify-self: start
+		line-height: 1.15
 		&:hover
 			background-color: $red
 			color: #fff
