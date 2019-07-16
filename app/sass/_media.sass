@@ -295,6 +295,15 @@
 			font-size: em(16px)
 		&__date
 			font-size: em(16px)
+	.pa-specialist-card
+		&__title
+			font-size: em(18px)
+		&__text
+			font-size: em(14px)
+		&__btn
+			margin-right: 20px
+		&__img-box
+			width: 120px
 
 
 /* Large Devices, Wide Screens */
@@ -446,6 +455,11 @@
 			font-size: em(14px)
 	.pa-thin-line__title
 		font-size: em(18px)
+	.pa-specialist-card
+		grid-column-gap: 20px
+		&__title
+			margin-bottom: em(8px)
+		
 		
 
 
@@ -784,6 +798,8 @@
 	.pa-thin-line
 		grid-template-columns: 1fr
 		padding: 12px 14px 8px
+		&_consultations
+			grid-template-columns: 1fr max-content
 		&__title
 			margin: 0 0 em(5px)
 			font-size: em(14px)
@@ -805,6 +821,31 @@
 			font-size: em(14px)
 		&__status-icon
 			font-size: em(14px)
+		&__review-btn
+			font-size: em(14px)
+			padding: em(10px) em(26px)
+		&__review-box
+			padding-right: 0px
+			grid-column: 2/3
+			// grid-row: 1/3
+	.pa-specialist-card 
+		grid-template-columns: max-content 1fr
+		padding: 13px 
+		grid-column-gap: 12px
+		&__img-box
+			width: 35px
+			height: 35px
+			border-radius: 35px
+		&__title
+			padding-top: 0
+			color: $blue
+		&__text
+			grid-column: 1/3
+			padding: 8px 0 12px
+		&__btn
+			grid-column: 1/3
+			grid-row: auto
+			justify-self: start
 		
 
 /* Small Devices, Tablets */
@@ -1127,6 +1168,10 @@
 	.pa-history
 		&>div
 			grid-template-columns: 1fr 
+	.pa-specialist-card 
+		&__btn
+			width: auto
+			font-size: em(14px)
 		
 
 
@@ -1427,8 +1472,27 @@
 		&_recomended
 			margin: 0
 	.pa-history
+		padding-bottom: 60px
 		&>div
 			padding: 0
+	.pa-thin-line
+		&_consultations
+			grid-column-gap: 15px
+		&__title
+			&_consultations
+				grid-column: 1/3
+				margin-bottom: 15px
+		&__review-box
+			grid-column: 2/3
+			grid-row: 2/3
+			margin-bottom: 7px
+	.pa-specialist-card 
+		border-radius: 0
+		&__text
+			font-size: em(12px)
+	.pa-specialists-inner
+		grid-row-gap: 20px
+	
 
 
 
@@ -1475,6 +1539,9 @@
 			padding: em(10px) em(17px)
 	.pa-service-card__info-text
 		font-size: em(12px)
+	.pa-thin-line__review-btn
+		font-size: em(12px)
+		padding: em(10px) em(14px)
 	
 
 
