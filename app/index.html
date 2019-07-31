@@ -36,7 +36,7 @@
 					<button type="submit" class="search-line__btn"><i class="icon-search"></i></button>
 					<input type="text" class="search-line__input" placeholder="Поиск">
 				</form>
-				<a href="#" class="red-btn menu-top-line__btn" id="enter-btn">Войти</a>
+				<a data-fancybox data-src="#login-popup" href="javascript:;" class="red-btn menu-top-line__btn open-login-popup" id="enter-btn">Войти</a>
 			</div>
 		</div>
 		<div class="menu-bottom-line">
@@ -415,6 +415,53 @@
 			<input type="submit" value="Узнать" data-popup="#child-skills-popup" class="main-btn child-skills-popup__btn">
 			<p class="main-form__personal-data child-skills-popup__personal-data">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="main-form__personal-data-link">персональных данных</a></p>
 		</form>
+	</div>
+
+	<div class="login-popup" id="login-popup" style="display: none;">
+		<div class="login-popup__wrapper grid">
+			<div class="login-popup__tab-box">
+				<p class="login-popup__tab-title">Регистрация</p>
+			</div>
+			<div class="login-popup__tab-box active">
+				<p class="login-popup__tab-title">Вход</p>
+			</div>
+			<form action="#" class="login-popup__register-form grid">
+				<p class="login-popup__form-text">Для регистрации, пожалуйста, заполните форму:</p>
+				<div class="login-popup__input-box">
+					<i class="login-popup__input-icon icon-man"></i>
+					<input type="text" class="login-popup__register-input" placeholder="Имя">
+				</div>
+				<div class="login-popup__input-box">
+					<input type="text" class="login-popup__register-input" placeholder="Фамилия">
+				</div>
+				<div class="login-popup__input-box">
+					<i class="login-popup__input-icon icon-form-email"></i>
+					<input type="text" class="login-popup__register-input" placeholder="Email">
+				</div>
+				<div class="login-popup__input-box">
+					<i class="login-popup__input-icon icon-form-phone"></i>
+					<input type="text" class="login-popup__register-input" placeholder="Телефон">
+				</div>
+				<p class="login-popup__policy">Нажимая на кнопку, я даю согласие на обработку моих <a href="#" class="login-popup__policy-url">персональных данных</a></p>
+				<a href="#" class="login-popup__btn main-btn">Зарегистрироваться</a>
+			</form>
+			<form action="#" class="login-popup__login-form grid">
+				<p class="login-popup__form-text">Войдите, чтобы продолжить обучение:</p>
+				<input type="text" class="login-popup__login-input" placeholder="Почта или телефон">
+				<input type="text" class="login-popup__login-input" placeholder="Пароль">
+				<a href="#" class="login-popup__forgot-password">Я не помню пароль</a>
+				<a href="#" class="login-popup__btn main-btn">Войти</a>
+			</form>
+			<div class="login-popup__soc-login-line">
+				<p class="login-popup__soc-login-text">Вы можете войти через соцсети:</p>
+				<a href="#" class="login-popup__soc-login-url">
+					<i class="login-popup__soc-login-icon icon-vk"></i>
+				</a>
+				<a href="#" class="login-popup__soc-login-url">
+					<i class="login-popup__soc-login-icon icon-fb"></i>
+				</a>
+			</div>
+		</div>
 	</div>
 	
 	<script src="js/scripts.min.js"></script>
